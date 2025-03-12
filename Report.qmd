@@ -7,7 +7,7 @@ geometry: "left=1.5cm,right=1.5cm,top=2cm,bottom=2cm"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=6)
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=8)
 ```
 
 ```{r}
@@ -25,9 +25,7 @@ install.packages("tinytex")
 
 A 150 word abstract.
 
-The number of restaurants in New York is steadily increasing, reflecting the city’s fast-paced lifestyle and the growing reliance on dining out or ordering in. With so many options available, understanding what factors influence meal preparation time is essential for both restaurant efficiency and customer satisfaction. Our project aims to explore how specific restaurant characteristics contribute to the time it takes to prepare an order.
-
-To investigate this, we are using a multilevel dataset titled "NYC Restaurants Data - Food Ordering and Delivery." This dataset contains variables such as order_id, restaurant, cuisine_type, WeekendOrWeekday, cost, rating, and prep_time. The dataset is structured into two levels: level 2 variables include cost, prep_time, and order_id, while level 1 variables include rating, restaurant, WeekendOrWeekday, and cuisine type.
+The number of restaurants in New York is steadily increasing, reflecting the city’s fast-paced lifestyle and the growing reliance on dining out or ordering in. With so many options available, understanding what factors influence the cost of a meal is essential for both restaurant efficiency and customer satisfaction. Our project aims to explore how specific restaurant characteristics contribute to the cost of an order.
 
 
 \newpage
@@ -37,6 +35,10 @@ To investigate this, we are using a multilevel dataset titled "NYC Restaurants D
 Type background and significance section here.
 
 ## Data
+
+
+We are using a multilevel dataset titled "NYC Restaurants Data - Food Ordering and Delivery." This dataset contains variables such as order_id, restaurant, cuisine_type, WeekendOrWeekday, rating, delivery_time, and prep_time. The dataset is structured into two levels: level 2 variables include restaurant, WeekendOrWeekday, and cuisine type. While level 1 variables include rating, cost, prep_time, order_id, and delivery_time.
+
 
 ## **Key Variables Considered**
 
@@ -60,6 +62,8 @@ Type data section here. Include captions with tables and graphs. Examples:
 
 ```{r}
 FoodOrdersNYC <- read.csv("FoodOrdersNYC.csv")
+
+
 ```
 
 ```{r, fig.cap="First 10 Observations in our dataset"}
@@ -68,7 +72,9 @@ table1 <- FoodOrdersNYC %>%
 kable(table1, booktabs=T, caption="The First 10 observations") %>%
   kable_styling(font_size = 8, latex_options = c("scale_down", "striped"))
 ```
+# Prep Time vs Cost
 
+We can use a scatterplot to understand the relationship between the time it takes to prepare an order, and the cost of the order.
 
 ```{r fig.cap="Cost vs. Prep Time"}
 # Improved scatter plot with a fitted regression line
@@ -79,26 +85,22 @@ p_enhanced <- ggplot(FoodOrdersNYC, aes(x = prep_time, y = cost)) +
     x = "Prep Time (minutes)",
     y = "Cost"
   ) +
-  theme_minimal() + 
   theme(
     plot.subtitle = element_text(face = "italic"),  # Italic subtitle
     
-    panel.grid.major = element_line(color = "gray80"),  # Lighter grid lines
-    panel.grid.minor = element_blank()  # No minor grid lines
   )
 
 # Print the enhanced plot
 print(p_enhanced)
 ```
 
-
-```{r}
-# Add a new variable for total time
-FoodOrdersNYC$total_time <- FoodOrdersNYC$prep_time + FoodOrdersNYC$delivery_time
-```
+we can see a positive correlation between prep time and cost of an order. This correlation does not apear to be dramatic, but if we separate orders by their cuisine type, we can hopefully see clearer trends.
 
 
-```{r}
+
+
+# Prep time vs Cost by Cuisine
+```{r, fig.cap="Cost vs. Prep Time by Cuisine"}
 
 # Create the scatter plot with adjustments for better display
 p_total_time_by_cuisine <- ggplot(FoodOrdersNYC, aes(x = prep_time, y = cost)) +
@@ -112,14 +114,16 @@ p_total_time_by_cuisine <- ggplot(FoodOrdersNYC, aes(x = prep_time, y = cost)) +
     strip.text.x = element_text(size = 10, angle = 0)  # Smaller facet labels, no angle
   ) +
   labs(
-    title = "Cost vs Prep_time by Cuisine Type",
-    x = "Total Time (prep + delivery, minutes)",
+    x = "Prep Time",
     y = "Cost ($)"
   )
 
 # Print the plot
 print(p_total_time_by_cuisine)
 ```
+
+When we separate the orders by Cuisine type, we can see that the effect of prep time on cost varies beteen cuisine types. This indicates that we should include a random slope in our model. We can see that American Cuisine has many more orders, and the number of restaurants that serve American Cuisine is also greater than some of our other Cuisine types. Japanese Cuisine also has considerably more orders.
+
 ```{r}
 # Filter for American cuisine
 american_restaurants <- FoodOrdersNYC[FoodOrdersNYC$cuisine_type == "American", ]
@@ -192,20 +196,19 @@ print(p_japanese)
 ## Methods
 
 
+# M1
 
 
 Consider $Y_{ij}$ to be the cost of the $j$-th order, in the $i$-th restaurant.
 
 
 $$
-
-Y_{ij} = \beta_{0} + \beta_{1} \text{cuisineType}_{i} + \beta_{2} \text{prepTime}_{ij} + u_{i} + \epsilon_{ij}
-
+Y_{ij} = \beta_0 + \alpha_1 \text{cuisineType}_i + \beta_2 \text{prepTime}_{ij} + u_i + \epsilon_ij
 $$
 
 
 $$
-u_i\sim N \left( \text{0} \text{,}\sigma^{2}_{u}\right) \\ \epsilon_i\sim N \left( \text{0} \text{,}\sigma\right)
+\quad \text{where} \quad u_i \sim \mathcal{N}(0, \sigma_u^2) \quad \text{and} \quad \epsilon_{ij} \sim \mathcal{N}(0, \sigma^2)
 $$
 
 ```{r, echo=TRUE, include=FALSE}

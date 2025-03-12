@@ -43,7 +43,50 @@ Type background and significance section here.
 ## Data
 
 ```{r}
-orders <- read.csv("food_order.csv")
+checkorders <- read.csv("food_order.csv")
+```
+
+
+```{r}
+# Ensure strings are treated as UTF-8
+checkorders$restaurant_name <- iconv(checkorders$restaurant_name, to = "UTF-8")
+```
+
+```{r}
+# Redefine the old and new names, making sure they're in UTF-8
+old_values <- c('Big Wong Restaurant \u008c_¤¾Ñ¼', 'Empanada Mama (closed)', 'Chipotle Mexican Grill $1.99 Delivery', "Joe's Shanghai \u008e_À\u008eü£¾÷´", 'Dirty Bird To Go (archived)', 'CafÌ© China')
+new_values <- c('Big Wong Restaurant', 'Empanada Mama', 'Chipotle Mexican Grill', "Joe's Shanghai", 'Dirty Bird To Go', 'Cafe China')
+
+# Use string replacement with explicit encoding
+checkorders$restaurant_name <- stringr::str_replace_all(checkorders$restaurant_name, setNames(new_values, old_values))
+```
+
+
+```{r}
+# Generic cleanup for patterns like pricing or status
+checkorders$restaurant_name <- gsub("\\$[0-9]+\\.\\d{2} Delivery", "", checkorders$restaurant_name)
+checkorders$restaurant_name <- gsub("\\s*\\(closed\\)", "", checkorders$restaurant_name, ignore.case = TRUE)
+checkorders$restaurant_name <- gsub("\\s*\\(archived\\)", "", checkorders$restaurant_name, ignore.case = TRUE)
+
+# Trim and standardize the case
+checkorders$restaurant_name <- stringr::str_trim(checkorders$restaurant_name)
+checkorders$restaurant_name <- tools::toTitleCase(checkorders$restaurant_name)
+
+unique(checkorders$restaurant_name)
+```
+
+
+
+
+
+```{r}
+orders <- checkorders
+```
+
+
+
+```{r}
+
 ```
 
 
@@ -112,7 +155,8 @@ orders5 <- orders %>%
     restaurant = restaurant_name,
     cost = cost_of_the_order,
     WeekendOrWeekday = day_of_the_week,
-    prep_time = food_preparation_time
+    prepTime = food_preparation_time,
+    deliveryTime = delivery_time
   )
 
 glimpse(orders5)
@@ -123,7 +167,7 @@ glimpse(orders5)
 # Filter restaurants with at least 20 orders
 orders6 <- orders5 %>%
   group_by(restaurant) %>%  # Group data by restaurant
-  filter(n() >= 10) %>%     # Filter groups with at least 20 orders
+  filter(n() >= 10) %>%     # Filter groups with at least 10 orders
   ungroup()                 # Remove the grouping
 
 glimpse(orders6)
@@ -193,12 +237,15 @@ orders_sorted <- orders6 %>%
 glimpse(orders_sorted)
 head(orders_sorted)
 ```
-
+```{r}
+# Add a new variable for total time
+orders_sorted$totalTime <- orders_sorted$prepTime + orders_sorted$deliveryTime
+```
 
 ```{r}
 NYCFoodOrders <- orders_sorted
 
-write.csv(NYCFoodOrders, "FoodOrdersNYC.csv", row.names = FALSE)
+write.csv(NYCFoodOrders, "FinalOrders.csv", row.names = FALSE)
 ```
 
 
@@ -221,6 +268,26 @@ summary(M13)
 ```
 
 ```{r}
+M14 <- lmer(cost ~ prep_time + cuisine_type +  cuisine_type:prep_time +(1 | restaurant), data = FoodOrdersNYC)
+
+# Check the model summary
+summary(M14)
+
+```
+```{r}
+M14 <- lmer(cost ~ prep_time + cuisine_type +  cuisine_type:prep_time +(1 | restaurant), data = FoodOrdersNYC)
+
+# Check the model summary
+summary(M14)
+
+```
+
+```{r}
+M15 <- lmer(data=FoodOrdersNYC, cost ~ prep_time + (1 | restaurant) + (1 | cuisine_type), REML=TRUE)
+summary(M15)
+```
+
+```{r}
 # Fit the unconditional means model
 M_null <- lmer(cost ~ 1 + (1 | restaurant), data = NYCFoodOrders)
 
@@ -232,10 +299,7 @@ summary(M_null)
 
 
 
-```{r}
-# Add a new variable for total time
-NYCFoodOrders$total_time <- NYCFoodOrders$prep_time + NYCFoodOrders$delivery_time
-```
+
 
 ```{r}
 # Create a basic scatter plot
@@ -295,7 +359,7 @@ print(prep_timevsCost)
 
 ```{r}
 # Filter for American cuisine
-american_restaurants <- NYCFoodOrders[NYCFoodOrders$cuisine_type == "American", ]
+american_restaurants <- FoodOrdersNYC[FoodOrdersNYC$cuisine_type == "American", ]
 
 ```
 
@@ -327,7 +391,7 @@ print(p_american_revised)
 
 ```{r}
 # Fit the linear mixed-effects model
-model_american <- lmer(cost ~ 1 + (prep_time | restaurant), data = american_restaurants)
+model_american <- lmer(cost ~ prep_time + (1 | restaurant), data = american_restaurants)
 
 # Check the summary of the model
 summary(model_american)
@@ -336,7 +400,7 @@ summary(model_american)
 
 ```{r}
 # Filter for Japanese cuisine
-Japanese_restaurants <- NYCFoodOrders[NYCFoodOrders$cuisine_type == "Japanese", ]
+Japanese_restaurants <- FoodOrdersNYC[FoodOrdersNYC$cuisine_type == "Japanese", ]
 ```
 
 ```{r}
@@ -362,18 +426,21 @@ p_japanese <- ggplot(Japanese_restaurants, aes(x = prep_time, y = cost)) +
 # Print the plot
 print(p_japanese)
 ```
+```{r}
+library(ggformula)
+```
 
 
 
+```{r}
+# Create a summary table
+cuisine_restaurants <- FoodOrdersNYC %>%
+  group_by(cuisine_type) %>%
+  summarise(Restaurants = list(unique(restaurant)), .groups = 'drop')  # Use 'list' to keep it in a list format if needed
 
-
-
-
-
-
-
-
-
+# View the table
+kable(cuisine_restaurants)
+```
 
 
 
@@ -403,16 +470,6 @@ orders_per_restaurant <- NYCFoodOrders %>%
 # Print the result
 print(orders_per_restaurant)
 ```
-
-```{r}
-
-```
-
-
-
-
-
-
 
 
 

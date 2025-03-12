@@ -1,0 +1,158 @@
+---
+title: "Untitled"
+author: "elijah  "
+format: pdf
+editor: visual
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=10)
+```
+
+```{r}
+# load packages - add any you would like
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(gridExtra)
+library(knitr)
+```
+
+```{r}
+install.packages("reticulate")
+```
+
+```{r}
+new_cleanedd <- read.csv("Food_Time new.csv", stringsAsFactors = FALSE)
+
+# Function to clean TARGET while keeping exactly 4 digits with a decimal in the middle
+clean_target <- function(x) {
+  x <- gsub("\\.", "", x)  # Remove all existing dots
+  if (nchar(x) < 4) {
+    return(NA)  # Return NA if too short to be valid
+  }
+  
+  # Keep only the first 4 digits
+  x <- substr(x, 1, 4)
+  
+  # Insert decimal after the first two digits (XX.XX format)
+  x <- sub("^(\\d{2})(\\d{2})$", "\\1.\\2", x)
+  
+  return(x)
+}
+new_cleanedd$TARGET <- sapply(new_cleanedd$TARGET, clean_target)
+new_cleanedd$TARGET <- as.numeric(new_cleanedd$TARGET)
+summary(new_cleanedd$TARGET)
+head(new_cleanedd$TARGET)
+
+```
+
+```{r}
+library(dplyr)
+
+food_orders <- read.csv("food_order.csv")
+
+food_orders$rating <- as.numeric(as.character(food_orders$rating))
+
+food_orders <- food_orders %>%
+  arrange(customer_id, order_id) %>%
+  mutate(order_instance = as.numeric(factor(order_id, levels = unique(order_id)))) 
+
+food_orders <- food_orders %>%
+  rename(
+    customer_id = customer_id, 
+    restaurant_name = restaurant_name, 
+    cuisine_type = cuisine_type, 
+    order_cost = cost_of_the_order,
+    order_day = day_of_the_week,
+    preparation_time = food_preparation_time,
+    delivery_time = delivery_time
+  )
+
+food_orders <- food_orders %>%
+  select(customer_id, restaurant_name, cuisine_type, order_day, order_instance, order_cost, rating, preparation_time, delivery_time)
+
+write.csv(food_orders, "cleaned_food_orders.csv", row.names = FALSE)
+
+head(food_orders)
+
+
+```
+
+```{r}
+NYCFoodOrders <- read.csv("food_order_2nd.csv")
+
+NYCFoodOrders$rating <- as.numeric(as.character(NYCFoodOrders$rating))
+
+NYCFoodOrders <- NYCFoodOrders %>%
+  arrange(restaurant_name, day_of_the_week, customer_id, order_id) %>%
+  mutate(order_id = as.numeric(factor(order_id, levels = unique(order_id)))) 
+
+NYCFoodOrders <- NYCFoodOrders %>%
+  rename(
+    customer_id = customer_id, 
+    restaurant = restaurant_name, 
+    cuisine_type = cuisine_type, 
+    cost = cost_of_the_order,
+    WeekendOrWeekday = day_of_the_week,
+    prep_time = food_preparation_time,
+    delivery_time = delivery_time
+  ) %>%
+  mutate(WeekendOrWeekday = ifelse(WeekendOrWeekday == "Weekday", 1, 0))
+
+NYCFoodOrders <- NYCFoodOrders %>%
+  select(order_id, restaurant, cuisine_type, WeekendOrWeekday, cost, rating, prep_time, delivery_time)
+
+head(NYCFoodOrders)
+
+write.csv(NYCFoodOrders, "NYCFoodOrders.csv", row.names = FALSE)
+```
+
+```{r}
+model_log <- lmer(log(prep_time) ~ cost + rating + cuisine_type + WeekendOrWeekday + (1 | restaurant), data = NYCFoodOrders)
+summary(model_log)
+
+
+
+```
+
+---
+title: "Predicting Food Order Costs in NYC Restaurants"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# 
+
+```{r}
+data <- read.csv("NYCFoodOrders.csv")  # Ensure it's a data frame
+
+```
+
+```{r}
+## Exploratory Analysis: Lattice Plots
+
+# Load necessary libraries
+library(lattice)
+
+# Boxplots of cost by cuisine type
+bwplot(cost ~ cuisine_type, data = data, 
+       main = "Cost by Cuisine Type",
+       xlab = "Cuisine Type",
+       ylab = "Cost", 
+       scales = list(x = list(rot = 45)))
+
+# Cost distribution across Weekend vs. Weekday
+bwplot(cost ~ WeekendOrWeekday, data = data, 
+       main = "Cost by Weekend/Weekday",
+       xlab = "Day Type",
+       ylab = "Cost")
+
+# Cost vs. Prep Time with Restaurant as a Grouping Factor
+xyplot(cost ~ prep_time | restaurant, data = data, 
+       type = c("p", "r"), 
+       layout = c(3,3),
+       main = "Cost vs. Prep Time by Restaurant")
+
+```

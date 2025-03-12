@@ -1,0 +1,99 @@
+---
+title: "Untitled"
+author: "Kaylee Wu"
+format: pdf
+editor: visual
+---
+
+Introduction
+The restaurant industry in New York City is highly dynamic, with food order costs influenced by various factors. Understanding these factors is essential for both restaurant owners aiming to optimize pricing strategies and customers looking for cost-effective dining options. This study investigates how food order costs relate to preparation time while considering key variables such as whether the order was placed on a weekday or weekend, the type of cuisine, and restaurant-specific effects. The dataset follows a hierarchical structure, where each food order (Level 1) is nested within restaurants (Level 2). We aim to provide insights that can help restaurants improve efficiency, enhance customer satisfaction, and refine pricing models in NYC’s competitive food industry.
+
+Model
+ In this study, we developed a linear mixed-effects model to examine factors impacting food cost in different resaurants. The response variable is cost, while the explanatory variables include cuisine type, Weekend or Weekday, food preparation time. The model follows a two-level structure.
+ 
+$$
+\text{Cost}_{ij} = \beta_0 + \beta_1 \text{CuisineType}_{ij} + \beta_2 \text{Weekend}_{ij} + \beta_3 \text{PrepTime}_{ij} + u_j + \epsilon_{ij}
+
+$$ $\ u_j \sim N(0, \sigma^2_u) \ $$\ \epsilon_{ij} \sim N(0, \sigma^2)$
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=10)
+```
+
+```{r}
+# load packages - add any you would like
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(gridExtra)
+library(knitr)
+```
+
+```{r}
+# Load dataset
+NYCFoodOrders <- read.csv("NYCFoodOrders.csv")
+```
+
+```{r}
+# EDA: scatterplot: cost vs. prep_time by cuisine_type( or restaurant)
+ggplot(data= NYCFoodOrders, aes(x= cost, y = prep_time)) +
+  geom_point() + 
+  geom_smooth(method="lm",color="black") 
+
+# there is a slightly upward trend, indicating that there is a positive correlation between cost and prep time. 
+
+ggplot(data = NYCFoodOrders, aes(x = cost, y = prep_time)) +
+  geom_point() + 
+  geom_smooth(method = "lm", color = "black", se = FALSE) +  
+  facet_wrap(~cuisine_type) +  # Creates separate plots for each cuisine type
+  labs(title = "Cost vs. Preparation Time by Cuisine Type",
+       x = "Cost ($)",
+       y = "Preparation Time (minutes)") +
+  theme_minimal()
+
+# In order to see the trend more carefully, divided up by cuisine type, for most of them it's a positive correlation, but one thing that's noticable is the plot for American, Chinese, Italian, and Japanese food, given a set cost, the food prep time vary significantly. This happens might because that depending on different restaurants,Chinese and American restuarants might have fixed prices for different food but those food actually vary in prep time a lot, like fast-chain resaurants such as KFC and Panda express. 
+
+```
+
+```{r}
+# Boxplot: cuisine_type vs. prep_time
+ggplot(data = NYCFoodOrders, aes(x = cuisine_type, y = prep_time)) +
+  geom_boxplot() +
+  labs(title = "Preparation Time by Cuisine Type",
+       x = "Cuisine Type",
+       y = "Preparation Time (minutes)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+
+# to do: make the y-axis start from 0. 
+
+```
+
+```{r}
+# boxplot: weekend/weekday vs. prep time
+ggplot(data = NYCFoodOrders, aes(x = WeekendOrWeekday, y = prep_time)) +
+  geom_boxplot() 
+  theme_minimal() 
+# the median food prep time is almost the same in weekdays or on weekends, but you can see that on weekends, more orders have a longer prep_time in terms of Q1. That might indicate that weekend orders might tend to take longer due to... 
+
+```
+
+```{r}
+# lattice plot
+ggplot(NYCFoodOrders,aes(x= WeekendOrWeekday,y=prep_time)) + 
+  geom_point() + geom_smooth(method="lm",color="black") + 
+  facet_wrap(~cuisine_type,ncol=5) +   
+  theme(strip.text.x=element_blank()) + ylim(10,35) 
+
+
+
+```
+
+```{r}
+# The model
+model <- lmer(prep_time ~ WeekendOrWeekday + cost + cuisine_type +
+             +(1 | restaurant) , data = NYCFoodOrders)
+
+summary(model)
+```

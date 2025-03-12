@@ -1,0 +1,1803 @@
+"restaurant","cuisine_type","WeekendOrWeekday","order_id","cost","rating","prep_time","delivery_time"
+"12 Chairs","Middle Eastern","Weekday",2,16.3,4,27,26
+"12 Chairs","Middle Eastern","Weekday",3,29.05,5,28,32
+"12 Chairs","Middle Eastern","Weekend",4,14.12,NA,31,27
+"12 Chairs","Middle Eastern","Weekend",5,29.1,NA,22,26
+"5 Napkin Burger","American","Weekday",6,7.91,NA,29,26
+"5 Napkin Burger","American","Weekday",7,8.39,NA,35,24
+"5 Napkin Burger","American","Weekend",8,9.27,NA,34,30
+"5 Napkin Burger","American","Weekend",9,25.22,5,27,21
+"5 Napkin Burger","American","Weekend",10,29.05,3,26,21
+"Amma","Indian","Weekday",13,8.88,4,27,24
+"Amma","Indian","Weekday",14,31.43,5,20,27
+"Amma","Indian","Weekend",15,19.35,NA,30,16
+"Amma","Indian","Weekend",16,17.03,NA,28,19
+"Amy Ruth's","Southern","Weekday",17,7.38,4,24,29
+"Amy Ruth's","Southern","Weekday",18,12.23,NA,32,33
+"Amy Ruth's","Southern","Weekend",19,16.11,4,30,26
+"Asuka Sushi","Japanese","Weekday",21,22.75,5,25,32
+"Asuka Sushi","Japanese","Weekend",22,19.45,5,23,23
+"Asuka Sushi","Japanese","Weekend",23,22.8,NA,30,28
+"Balthazar Boulangerie","French","Weekday",27,29.15,4,31,28
+"Balthazar Boulangerie","French","Weekend",28,29.1,5,31,27
+"Balthazar Boulangerie","French","Weekend",29,21.93,NA,31,20
+"Balthazar Boulangerie","French","Weekend",30,12.18,3,24,29
+"Balthazar Boulangerie","French","Weekend",31,12.13,NA,22,27
+"Balthazar Boulangerie","French","Weekend",32,12.23,4,35,23
+"Balthazar Boulangerie","French","Weekend",33,12.13,5,25,24
+"Balthazar Boulangerie","French","Weekend",34,21.25,NA,25,20
+"Balthazar Boulangerie","French","Weekend",35,15.52,NA,21,29
+"Balthazar Boulangerie","French","Weekend",36,21.39,NA,35,29
+"Barbounia","Mediterranean","Weekday",37,5.97,3,33,30
+"Barbounia","Mediterranean","Weekend",38,13.97,5,29,25
+"Barbounia","Mediterranean","Weekend",39,16.93,5,30,18
+"Barbounia","Mediterranean","Weekend",40,12.13,NA,26,26
+"Barbounia","Mediterranean","Weekend",41,5.77,NA,23,23
+"Barbounia","Mediterranean","Weekend",42,20.18,5,29,19
+"Bareburger","American","Weekday",43,15.57,4,24,28
+"Bareburger","American","Weekday",44,25.22,3,31,27
+"Bareburger","American","Weekday",45,12.18,3,25,24
+"Bareburger","American","Weekday",46,22.85,NA,21,30
+"Bareburger","American","Weekday",47,19.35,4,33,27
+"Bareburger","American","Weekday",48,16.49,NA,31,27
+"Bareburger","American","Weekday",49,16.3,NA,20,28
+"Bareburger","American","Weekend",50,8.73,5,21,19
+"Bareburger","American","Weekend",51,24.2,4,23,23
+"Bareburger","American","Weekend",52,16.25,NA,32,28
+"Bareburger","American","Weekend",53,5.63,4,32,30
+"Bareburger","American","Weekend",54,17.03,5,35,21
+"Bareburger","American","Weekend",55,13.05,4,31,30
+"Bareburger","American","Weekend",56,8.63,4,21,22
+"Bareburger","American","Weekend",57,14.12,4,26,19
+"Bareburger","American","Weekend",58,12.18,NA,33,18
+"Bareburger","American","Weekend",59,6.84,5,22,24
+"Bareburger","American","Weekend",60,8.39,3,27,30
+"Bareburger","American","Weekend",61,32.93,NA,29,24
+"Bareburger","American","Weekend",62,16.25,NA,29,15
+"Bareburger","American","Weekend",63,13.77,3,33,29
+"Bareburger","American","Weekend",64,6.07,4,23,15
+"Bareburger","American","Weekend",65,24.2,5,27,24
+"Bareburger","American","Weekend",66,12.56,NA,24,26
+"Bareburger","American","Weekend",67,12.13,5,32,26
+"Bareburger","American","Weekend",68,6.74,NA,26,29
+"Bareburger","American","Weekend",69,12.08,NA,29,20
+"Benihana","Japanese","Weekday",70,25.22,4,27,27
+"Benihana","Japanese","Weekend",71,29.05,NA,25,26
+"Benihana","Japanese","Weekend",72,29.29,5,20,18
+"Benihana","Japanese","Weekend",73,5.77,NA,22,22
+"Benihana","Japanese","Weekend",74,16.11,NA,25,29
+"Blue Ribbon Brooklyn","American","Weekday",82,24.2,3,22,32
+"Blue Ribbon Brooklyn","American","Weekday",83,5.97,4,32,24
+"Blue Ribbon Brooklyn","American","Weekend",84,13.1,NA,32,19
+"Blue Ribbon Brooklyn","American","Weekend",85,22.85,3,23,19
+"Blue Ribbon Fried Chicken","American","Weekday",86,19.89,NA,27,24
+"Blue Ribbon Fried Chicken","American","Weekday",87,8.93,5,34,30
+"Blue Ribbon Fried Chicken","American","Weekday",88,24.25,5,33,30
+"Blue Ribbon Fried Chicken","American","Weekday",89,14.07,4,34,24
+"Blue Ribbon Fried Chicken","American","Weekday",90,7.86,4,22,33
+"Blue Ribbon Fried Chicken","American","Weekday",91,12.56,5,27,27
+"Blue Ribbon Fried Chicken","American","Weekday",92,20.23,4,20,26
+"Blue Ribbon Fried Chicken","American","Weekday",93,12.18,3,29,27
+"Blue Ribbon Fried Chicken","American","Weekday",94,12.52,4,24,31
+"Blue Ribbon Fried Chicken","American","Weekday",95,31.29,NA,22,33
+"Blue Ribbon Fried Chicken","American","Weekday",96,15.33,4,24,29
+"Blue Ribbon Fried Chicken","American","Weekday",97,24.3,5,20,27
+"Blue Ribbon Fried Chicken","American","Weekday",98,9.51,NA,30,29
+"Blue Ribbon Fried Chicken","American","Weekday",99,12.23,5,33,26
+"Blue Ribbon Fried Chicken","American","Weekday",100,19.35,NA,35,24
+"Blue Ribbon Fried Chicken","American","Weekday",101,9.75,5,23,32
+"Blue Ribbon Fried Chicken","American","Weekday",102,13,4,33,29
+"Blue Ribbon Fried Chicken","American","Weekday",103,29.15,5,20,29
+"Blue Ribbon Fried Chicken","American","Weekday",104,11.59,NA,25,24
+"Blue Ribbon Fried Chicken","American","Weekday",105,6.79,NA,33,28
+"Blue Ribbon Fried Chicken","American","Weekday",106,22.31,5,28,27
+"Blue Ribbon Fried Chicken","American","Weekday",107,14.07,NA,20,31
+"Blue Ribbon Fried Chicken","American","Weekend",108,12.18,4,26,29
+"Blue Ribbon Fried Chicken","American","Weekend",109,29.05,5,30,29
+"Blue Ribbon Fried Chicken","American","Weekend",110,15.72,4,25,19
+"Blue Ribbon Fried Chicken","American","Weekend",111,13,NA,29,30
+"Blue Ribbon Fried Chicken","American","Weekend",112,12.08,4,21,21
+"Blue Ribbon Fried Chicken","American","Weekend",113,14.6,3,27,27
+"Blue Ribbon Fried Chicken","American","Weekend",114,6.45,4,30,24
+"Blue Ribbon Fried Chicken","American","Weekend",115,29.3,4,28,16
+"Blue Ribbon Fried Chicken","American","Weekend",116,12.18,NA,31,23
+"Blue Ribbon Fried Chicken","American","Weekend",117,8.1,NA,33,22
+"Blue Ribbon Fried Chicken","American","Weekend",118,18.24,NA,21,16
+"Blue Ribbon Fried Chicken","American","Weekend",119,11.69,5,21,24
+"Blue Ribbon Fried Chicken","American","Weekend",120,31.38,3,35,20
+"Blue Ribbon Fried Chicken","American","Weekend",121,21.34,NA,35,23
+"Blue Ribbon Fried Chicken","American","Weekend",122,32.93,5,24,23
+"Blue Ribbon Fried Chicken","American","Weekend",123,12.13,NA,21,28
+"Blue Ribbon Fried Chicken","American","Weekend",124,33.18,NA,26,20
+"Blue Ribbon Fried Chicken","American","Weekend",125,21.83,NA,20,27
+"Blue Ribbon Fried Chicken","American","Weekend",126,24.25,NA,27,21
+"Blue Ribbon Fried Chicken","American","Weekend",127,20.18,3,22,20
+"Blue Ribbon Fried Chicken","American","Weekend",128,19.4,4,33,21
+"Blue Ribbon Fried Chicken","American","Weekend",129,9.02,5,31,15
+"Blue Ribbon Fried Chicken","American","Weekend",130,29.15,4,31,17
+"Blue Ribbon Fried Chicken","American","Weekend",131,29.39,NA,27,28
+"Blue Ribbon Fried Chicken","American","Weekend",132,8.78,NA,22,26
+"Blue Ribbon Fried Chicken","American","Weekend",133,29.2,3,25,15
+"Blue Ribbon Fried Chicken","American","Weekend",134,12.18,4,32,22
+"Blue Ribbon Fried Chicken","American","Weekend",135,12.23,5,27,27
+"Blue Ribbon Fried Chicken","American","Weekend",136,16.2,NA,32,23
+"Blue Ribbon Fried Chicken","American","Weekend",137,13,NA,24,30
+"Blue Ribbon Fried Chicken","American","Weekend",138,24.3,5,22,15
+"Blue Ribbon Fried Chicken","American","Weekend",139,24.2,NA,28,29
+"Blue Ribbon Fried Chicken","American","Weekend",140,33.03,5,35,25
+"Blue Ribbon Fried Chicken","American","Weekend",141,12.13,NA,20,26
+"Blue Ribbon Fried Chicken","American","Weekend",142,15.33,NA,23,15
+"Blue Ribbon Fried Chicken","American","Weekend",143,24.3,5,23,17
+"Blue Ribbon Fried Chicken","American","Weekend",144,25.27,5,29,28
+"Blue Ribbon Fried Chicken","American","Weekend",145,24.3,5,34,21
+"Blue Ribbon Fried Chicken","American","Weekend",146,8.2,5,34,17
+"Blue Ribbon Fried Chicken","American","Weekend",147,9.27,NA,29,16
+"Blue Ribbon Fried Chicken","American","Weekend",148,12.13,NA,35,29
+"Blue Ribbon Fried Chicken","American","Weekend",149,6.79,3,28,27
+"Blue Ribbon Fried Chicken","American","Weekend",150,16.39,NA,27,22
+"Blue Ribbon Fried Chicken","American","Weekend",151,12.13,5,28,23
+"Blue Ribbon Fried Chicken","American","Weekend",152,10.14,4,21,17
+"Blue Ribbon Fried Chicken","American","Weekend",153,33.03,5,34,24
+"Blue Ribbon Fried Chicken","American","Weekend",154,14.65,NA,34,23
+"Blue Ribbon Fried Chicken","American","Weekend",155,12.18,4,22,29
+"Blue Ribbon Fried Chicken","American","Weekend",156,29.1,4,21,22
+"Blue Ribbon Fried Chicken","American","Weekend",157,21.34,5,28,21
+"Blue Ribbon Fried Chicken","American","Weekend",158,15.71,3,27,25
+"Blue Ribbon Fried Chicken","American","Weekend",159,8.39,4,26,17
+"Blue Ribbon Fried Chicken","American","Weekend",160,24.3,5,22,26
+"Blue Ribbon Fried Chicken","American","Weekend",161,12.18,NA,25,17
+"Blue Ribbon Fried Chicken","American","Weekend",162,29.44,4,33,27
+"Blue Ribbon Fried Chicken","American","Weekend",163,12.13,5,25,29
+"Blue Ribbon Fried Chicken","American","Weekend",164,16.44,4,24,16
+"Blue Ribbon Fried Chicken","American","Weekend",165,29.05,5,29,20
+"Blue Ribbon Fried Chicken","American","Weekend",166,29.1,NA,31,27
+"Blue Ribbon Fried Chicken","American","Weekend",167,8.44,3,31,18
+"Blue Ribbon Fried Chicken","American","Weekend",168,21.29,5,28,29
+"Blue Ribbon Fried Chicken","American","Weekend",169,29.59,5,23,25
+"Blue Ribbon Fried Chicken","American","Weekend",170,6.84,3,24,26
+"Blue Ribbon Fried Chicken","American","Weekend",171,12.95,5,27,28
+"Blue Ribbon Fried Chicken","American","Weekend",172,8.98,3,26,27
+"Blue Ribbon Fried Chicken","American","Weekend",173,12.23,4,21,26
+"Blue Ribbon Fried Chicken","American","Weekend",174,11.64,5,24,16
+"Blue Ribbon Fried Chicken","American","Weekend",175,12.23,NA,30,20
+"Blue Ribbon Fried Chicken","American","Weekend",176,12.18,5,35,27
+"Blue Ribbon Fried Chicken","American","Weekend",177,12.61,3,30,30
+"Blue Ribbon Fried Chicken","American","Weekend",178,14.02,5,20,28
+"Blue Ribbon Fried Chicken","American","Weekend",179,24.25,NA,28,21
+"Blue Ribbon Fried Chicken","American","Weekend",180,5.73,NA,34,16
+"Blue Ribbon Fried Chicken","American","Weekend",181,14.84,5,21,25
+"Blue Ribbon Sushi","Japanese","Weekday",182,25.22,NA,31,24
+"Blue Ribbon Sushi","Japanese","Weekday",183,12.71,NA,24,28
+"Blue Ribbon Sushi","Japanese","Weekday",184,12.18,NA,34,32
+"Blue Ribbon Sushi","Japanese","Weekday",185,5.82,NA,27,28
+"Blue Ribbon Sushi","Japanese","Weekday",186,24.3,NA,21,26
+"Blue Ribbon Sushi","Japanese","Weekday",187,19.4,NA,24,24
+"Blue Ribbon Sushi","Japanese","Weekday",188,24.25,5,30,26
+"Blue Ribbon Sushi","Japanese","Weekday",189,12.13,NA,32,29
+"Blue Ribbon Sushi","Japanese","Weekday",190,33.37,3,30,27
+"Blue Ribbon Sushi","Japanese","Weekday",191,5.92,NA,27,31
+"Blue Ribbon Sushi","Japanese","Weekday",192,14.12,5,35,33
+"Blue Ribbon Sushi","Japanese","Weekday",193,24.25,NA,29,25
+"Blue Ribbon Sushi","Japanese","Weekday",194,24.25,4,22,29
+"Blue Ribbon Sushi","Japanese","Weekday",195,14.5,3,34,24
+"Blue Ribbon Sushi","Japanese","Weekday",196,13.87,NA,31,30
+"Blue Ribbon Sushi","Japanese","Weekday",197,14.02,NA,35,29
+"Blue Ribbon Sushi","Japanese","Weekday",198,24.3,5,21,33
+"Blue Ribbon Sushi","Japanese","Weekday",199,21.83,3,21,26
+"Blue Ribbon Sushi","Japanese","Weekday",200,12.13,NA,26,27
+"Blue Ribbon Sushi","Japanese","Weekday",201,14.07,NA,35,29
+"Blue Ribbon Sushi","Japanese","Weekday",202,29.15,NA,26,24
+"Blue Ribbon Sushi","Japanese","Weekday",203,16.01,4,23,31
+"Blue Ribbon Sushi","Japanese","Weekday",204,17.08,5,35,29
+"Blue Ribbon Sushi","Japanese","Weekday",205,16.06,NA,34,33
+"Blue Ribbon Sushi","Japanese","Weekday",206,19.45,NA,22,27
+"Blue Ribbon Sushi","Japanese","Weekday",207,19.45,NA,28,28
+"Blue Ribbon Sushi","Japanese","Weekday",208,32.93,3,34,31
+"Blue Ribbon Sushi","Japanese","Weekday",209,6.79,5,21,29
+"Blue Ribbon Sushi","Japanese","Weekday",210,8.54,4,22,26
+"Blue Ribbon Sushi","Japanese","Weekday",211,12.9,3,25,31
+"Blue Ribbon Sushi","Japanese","Weekday",212,12.32,NA,29,27
+"Blue Ribbon Sushi","Japanese","Weekday",213,9.75,5,27,27
+"Blue Ribbon Sushi","Japanese","Weekday",214,13,5,22,31
+"Blue Ribbon Sushi","Japanese","Weekday",215,11.3,NA,24,24
+"Blue Ribbon Sushi","Japanese","Weekend",216,19.4,5,24,25
+"Blue Ribbon Sushi","Japanese","Weekend",217,12.18,5,28,25
+"Blue Ribbon Sushi","Japanese","Weekend",218,12.13,3,24,23
+"Blue Ribbon Sushi","Japanese","Weekend",219,16.11,5,22,26
+"Blue Ribbon Sushi","Japanese","Weekend",220,9.41,5,24,18
+"Blue Ribbon Sushi","Japanese","Weekend",221,16.44,5,30,29
+"Blue Ribbon Sushi","Japanese","Weekend",222,12.18,5,34,29
+"Blue Ribbon Sushi","Japanese","Weekend",223,29.68,3,26,30
+"Blue Ribbon Sushi","Japanese","Weekend",224,12.13,5,31,29
+"Blue Ribbon Sushi","Japanese","Weekend",225,8.1,5,35,18
+"Blue Ribbon Sushi","Japanese","Weekend",226,16.93,4,30,25
+"Blue Ribbon Sushi","Japanese","Weekend",227,25.27,3,20,20
+"Blue Ribbon Sushi","Japanese","Weekend",228,12.08,4,33,22
+"Blue Ribbon Sushi","Japanese","Weekend",229,5.82,NA,34,27
+"Blue Ribbon Sushi","Japanese","Weekend",230,14.5,NA,28,28
+"Blue Ribbon Sushi","Japanese","Weekend",231,16.44,NA,22,18
+"Blue Ribbon Sushi","Japanese","Weekend",232,17.07,4,27,15
+"Blue Ribbon Sushi","Japanese","Weekend",233,16.2,4,35,26
+"Blue Ribbon Sushi","Japanese","Weekend",234,31.38,NA,26,27
+"Blue Ribbon Sushi","Japanese","Weekend",235,8.54,5,34,25
+"Blue Ribbon Sushi","Japanese","Weekend",236,12.08,5,31,16
+"Blue Ribbon Sushi","Japanese","Weekend",237,16.49,3,24,30
+"Blue Ribbon Sushi","Japanese","Weekend",238,12.23,3,33,21
+"Blue Ribbon Sushi","Japanese","Weekend",239,15.86,NA,33,15
+"Blue Ribbon Sushi","Japanese","Weekend",240,11.93,3,24,21
+"Blue Ribbon Sushi","Japanese","Weekend",241,11.59,4,22,18
+"Blue Ribbon Sushi","Japanese","Weekend",242,13.87,NA,28,28
+"Blue Ribbon Sushi","Japanese","Weekend",243,29.1,5,20,16
+"Blue Ribbon Sushi","Japanese","Weekend",244,12.13,4,35,28
+"Blue Ribbon Sushi","Japanese","Weekend",245,9.85,3,24,15
+"Blue Ribbon Sushi","Japanese","Weekend",246,6.74,5,22,29
+"Blue Ribbon Sushi","Japanese","Weekend",247,15.76,NA,30,26
+"Blue Ribbon Sushi","Japanese","Weekend",248,6.64,NA,23,15
+"Blue Ribbon Sushi","Japanese","Weekend",249,24.25,4,24,23
+"Blue Ribbon Sushi","Japanese","Weekend",250,5.97,3,31,30
+"Blue Ribbon Sushi","Japanese","Weekend",251,22.07,4,33,15
+"Blue Ribbon Sushi","Japanese","Weekend",252,12.13,5,28,15
+"Blue Ribbon Sushi","Japanese","Weekend",253,16.06,NA,24,21
+"Blue Ribbon Sushi","Japanese","Weekend",254,8.54,5,34,29
+"Blue Ribbon Sushi","Japanese","Weekend",255,12.56,NA,32,20
+"Blue Ribbon Sushi","Japanese","Weekend",256,19.45,NA,28,24
+"Blue Ribbon Sushi","Japanese","Weekend",257,6.84,4,20,30
+"Blue Ribbon Sushi","Japanese","Weekend",258,13,5,34,15
+"Blue Ribbon Sushi","Japanese","Weekend",259,24.35,5,33,22
+"Blue Ribbon Sushi","Japanese","Weekend",260,16.1,3,26,17
+"Blue Ribbon Sushi","Japanese","Weekend",261,24.2,4,29,18
+"Blue Ribbon Sushi","Japanese","Weekend",262,12.95,5,25,16
+"Blue Ribbon Sushi","Japanese","Weekend",263,9.17,NA,27,29
+"Blue Ribbon Sushi","Japanese","Weekend",264,18.04,NA,35,28
+"Blue Ribbon Sushi","Japanese","Weekend",265,19.35,5,26,23
+"Blue Ribbon Sushi","Japanese","Weekend",266,6.74,4,22,28
+"Blue Ribbon Sushi","Japanese","Weekend",267,11.83,4,26,21
+"Blue Ribbon Sushi","Japanese","Weekend",268,29.15,4,31,19
+"Blue Ribbon Sushi","Japanese","Weekend",269,6.74,NA,31,27
+"Blue Ribbon Sushi","Japanese","Weekend",270,29.1,4,21,15
+"Blue Ribbon Sushi","Japanese","Weekend",271,9.32,4,32,18
+"Blue Ribbon Sushi","Japanese","Weekend",272,6.69,NA,35,26
+"Blue Ribbon Sushi","Japanese","Weekend",273,11.59,NA,26,23
+"Blue Ribbon Sushi","Japanese","Weekend",274,9.17,3,25,28
+"Blue Ribbon Sushi","Japanese","Weekend",275,12.18,4,30,17
+"Blue Ribbon Sushi","Japanese","Weekend",276,12.13,5,30,28
+"Blue Ribbon Sushi","Japanese","Weekend",277,11.69,NA,28,29
+"Blue Ribbon Sushi","Japanese","Weekend",278,29.2,NA,22,25
+"Blue Ribbon Sushi","Japanese","Weekend",279,29.25,NA,33,17
+"Blue Ribbon Sushi","Japanese","Weekend",280,8.68,5,34,27
+"Blue Ribbon Sushi","Japanese","Weekend",281,12.23,NA,20,24
+"Blue Ribbon Sushi","Japanese","Weekend",282,31.43,5,24,17
+"Blue Ribbon Sushi","Japanese","Weekend",283,12.95,NA,22,23
+"Blue Ribbon Sushi","Japanese","Weekend",284,14.02,4,23,18
+"Blue Ribbon Sushi","Japanese","Weekend",285,29.25,NA,22,27
+"Blue Ribbon Sushi","Japanese","Weekend",286,24.3,NA,29,15
+"Blue Ribbon Sushi","Japanese","Weekend",287,13.78,4,32,23
+"Blue Ribbon Sushi","Japanese","Weekend",288,16.01,NA,29,22
+"Blue Ribbon Sushi","Japanese","Weekend",289,16.15,3,23,21
+"Blue Ribbon Sushi","Japanese","Weekend",290,24.25,5,35,16
+"Blue Ribbon Sushi","Japanese","Weekend",291,12.23,4,29,22
+"Blue Ribbon Sushi","Japanese","Weekend",292,12.22,NA,34,28
+"Blue Ribbon Sushi","Japanese","Weekend",293,24.3,5,32,28
+"Blue Ribbon Sushi","Japanese","Weekend",294,14.02,NA,35,16
+"Blue Ribbon Sushi","Japanese","Weekend",295,12.18,4,27,16
+"Blue Ribbon Sushi","Japanese","Weekend",296,17.85,NA,28,18
+"Blue Ribbon Sushi","Japanese","Weekend",297,12.13,5,26,17
+"Blue Ribbon Sushi","Japanese","Weekend",298,24.3,4,35,18
+"Blue Ribbon Sushi","Japanese","Weekend",299,19.4,5,26,17
+"Blue Ribbon Sushi","Japanese","Weekend",300,8.83,4,20,19
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",301,12.08,5,29,24
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",302,16.2,5,27,27
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",303,6.02,NA,29,25
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",304,19.45,5,34,27
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",305,22.26,NA,20,26
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",306,15.28,NA,24,29
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",307,12.56,NA,32,27
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",308,12.95,NA,28,28
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",309,19.35,5,23,28
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",310,13.05,5,22,28
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",311,4.9,4,29,32
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",312,5.72,5,32,26
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",313,11.69,5,21,28
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",314,15.81,NA,21,29
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekday",315,29.25,NA,25,29
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",316,24.25,5,25,26
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",317,15.81,NA,21,25
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",318,15.33,5,32,29
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",319,12.37,NA,21,16
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",320,11.88,5,25,17
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",321,15.23,NA,30,19
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",322,16.1,NA,27,27
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",323,12.13,NA,21,29
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",324,33.03,NA,33,20
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",325,12.18,4,24,15
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",326,10.82,NA,25,24
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",327,9.65,NA,25,26
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",328,22.36,4,25,18
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",329,33.03,5,28,15
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",330,12.18,NA,24,18
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",331,19.4,NA,28,20
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",332,9.12,3,27,27
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",333,5.87,4,31,20
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",334,15.96,5,31,20
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",335,15.91,NA,31,16
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",336,14.12,3,21,24
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",337,16.74,4,22,20
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",338,12.18,5,22,18
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",339,14.12,NA,31,25
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",340,19.35,NA,23,17
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",341,4.85,5,20,21
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",342,16.39,NA,31,18
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",343,16.54,NA,27,17
+"Blue Ribbon Sushi Bar & Grill","Japanese","Weekend",344,13.15,5,30,30
+"Blue Ribbon Sushi Izakaya","Japanese","Weekday",345,16.01,5,23,27
+"Blue Ribbon Sushi Izakaya","Japanese","Weekday",346,8.83,5,34,27
+"Blue Ribbon Sushi Izakaya","Japanese","Weekday",347,19.45,5,33,32
+"Blue Ribbon Sushi Izakaya","Japanese","Weekday",348,12.23,NA,26,26
+"Blue Ribbon Sushi Izakaya","Japanese","Weekday",349,29.05,4,28,25
+"Blue Ribbon Sushi Izakaya","Japanese","Weekday",350,13.1,5,24,28
+"Blue Ribbon Sushi Izakaya","Japanese","Weekday",351,12.13,5,30,29
+"Blue Ribbon Sushi Izakaya","Japanese","Weekday",352,14.07,4,24,26
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",353,12.08,3,35,15
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",354,15.76,4,33,23
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",355,8.93,5,28,18
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",356,12.23,NA,21,23
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",357,32.93,4,21,19
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",358,9.51,NA,35,21
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",359,18.24,5,32,22
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",360,29.1,NA,32,26
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",361,9.22,NA,28,15
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",362,16.1,3,20,28
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",363,12.23,NA,33,23
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",364,24.25,5,33,21
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",365,33.03,3,34,23
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",366,33.03,NA,21,22
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",367,12.23,3,34,25
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",368,16.44,NA,32,23
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",369,14.41,5,22,20
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",370,6.79,5,32,30
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",371,21.93,NA,35,26
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",372,12.08,NA,25,23
+"Blue Ribbon Sushi Izakaya","Japanese","Weekend",373,9.7,NA,25,15
+"Boqueria","Spanish","Weekday",374,12.13,NA,33,28
+"Boqueria","Spanish","Weekend",375,14.5,NA,35,29
+"Boqueria","Spanish","Weekend",376,24.25,NA,28,18
+"Boqueria","Spanish","Weekend",377,13,5,26,24
+"Boqueria","Spanish","Weekend",378,29.1,NA,28,19
+"Boqueria","Spanish","Weekend",379,12.13,5,30,20
+"Boqueria","Spanish","Weekend",380,12.66,NA,27,30
+"Boqueria","Spanish","Weekend",381,29.05,4,24,24
+"Boqueria","Spanish","Weekend",382,22.85,5,28,30
+"Bubby's ","American","Weekday",383,12.18,4,28,31
+"Bubby's ","American","Weekend",384,22.75,5,32,16
+"Bubby's ","American","Weekend",385,24.25,NA,34,28
+"Burger Joint","American","Weekday",388,12.13,5,31,33
+"Burger Joint","American","Weekday",389,9.02,5,24,29
+"Burger Joint","American","Weekday",390,12.23,NA,21,27
+"Burger Joint","American","Weekend",391,16.15,NA,31,15
+"Burger Joint","American","Weekend",392,12.18,4,35,15
+"Burger Joint","American","Weekend",393,13.1,NA,22,18
+"Burger Joint","American","Weekend",394,15.72,4,31,30
+"Burger Joint","American","Weekend",395,14.16,4,28,28
+"Burger Joint","American","Weekend",396,8.35,4,28,17
+"Burger Joint","American","Weekend",397,7.81,3,33,24
+"Burger Joint","American","Weekend",398,21.88,5,26,24
+"Burger Joint","American","Weekend",399,11.98,NA,20,17
+"Cafe Habana","Mexican","Weekday",402,8.73,3,27,28
+"Cafe Habana","Mexican","Weekday",403,6.79,NA,33,25
+"Cafe Habana","Mexican","Weekday",404,12.23,5,23,28
+"Cafe Habana","Mexican","Weekday",405,25.22,NA,32,28
+"Cafe Habana","Mexican","Weekday",406,13.97,3,34,28
+"Cafe Habana","Mexican","Weekday",407,6.69,5,26,31
+"Cafe Habana","Mexican","Weekday",408,16.98,4,23,30
+"Cafe Habana","Mexican","Weekday",409,9.75,5,34,30
+"Cafe Habana","Mexican","Weekend",410,4.85,5,28,22
+"Cafe Habana","Mexican","Weekend",411,8.1,NA,20,16
+"Cafe Habana","Mexican","Weekend",412,9.51,5,22,21
+"Cafe Habana","Mexican","Weekend",413,31.38,4,23,27
+"Cafe Habana","Mexican","Weekend",414,14.07,4,26,21
+"Cafe Habana","Mexican","Weekend",415,8.25,4,21,29
+"Cafe Habana","Mexican","Weekend",416,25.17,NA,27,26
+"Cafe Habana","Mexican","Weekend",417,15.62,NA,29,19
+"Cafe Mogador","Middle Eastern","Weekday",418,29.1,5,20,29
+"Cafe Mogador","Middle Eastern","Weekday",419,25.27,5,30,25
+"Cafe Mogador","Middle Eastern","Weekday",420,19.45,4,23,29
+"Cafe Mogador","Middle Eastern","Weekday",421,15.86,NA,32,29
+"Cafe Mogador","Middle Eastern","Weekend",422,6.69,4,23,30
+"Cafe Mogador","Middle Eastern","Weekend",423,12.95,3,21,20
+"Cafe Mogador","Middle Eastern","Weekend",424,24.2,4,32,22
+"Cafe Mogador","Middle Eastern","Weekend",425,29.05,4,27,30
+"Cafe Mogador","Middle Eastern","Weekend",426,24.25,NA,26,22
+"Cafe Mogador","Middle Eastern","Weekend",427,29.88,4,20,17
+"Cafe Mogador","Middle Eastern","Weekend",428,16.15,5,29,27
+"Cafe Mogador","Middle Eastern","Weekend",429,9.22,NA,23,15
+"Cafe Mogador","Middle Eastern","Weekend",430,15.91,5,32,15
+"Cafe Mogador","Middle Eastern","Weekend",431,13,NA,21,15
+"Cafe Mogador","Middle Eastern","Weekend",432,5.77,3,20,16
+"Cafe Mogador","Middle Eastern","Weekend",433,25.17,4,23,30
+"Cafe Mogador","Middle Eastern","Weekend",434,13.68,4,29,18
+"Cafe Mogador","Middle Eastern","Weekend",435,14.12,NA,24,24
+"Cafeteria","American","Weekday",437,20.47,3,32,24
+"Cafeteria","American","Weekday",438,12.23,NA,26,25
+"Cafeteria","American","Weekday",439,6.69,4,21,32
+"Cafeteria","American","Weekend",440,13.05,NA,31,16
+"Cafeteria","American","Weekend",441,15.52,3,28,30
+"Cafeteria","American","Weekend",442,11.59,NA,24,19
+"Cafeteria","American","Weekend",443,16.44,NA,33,22
+"Cafeteria","American","Weekend",444,12.08,3,35,28
+"Cafeteria","American","Weekend",445,17.03,NA,34,20
+"CafÌ© China","Chinese","Weekday",446,32.93,3,26,28
+"CafÌ© China","Chinese","Weekday",447,15.57,4,34,31
+"CafÌ© China","Chinese","Weekend",448,24.3,NA,20,23
+"CafÌ© China","Chinese","Weekend",449,21.83,4,32,15
+"CafÌ© China","Chinese","Weekend",450,12.13,NA,27,25
+"CafÌ© China","Chinese","Weekend",451,12.61,5,20,20
+"Carmine's","Italian","Weekday",452,29.05,NA,33,32
+"Carmine's","Italian","Weekday",453,19.98,5,34,30
+"Carmine's","Italian","Weekend",454,21.93,5,20,28
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekday",455,14.16,NA,22,24
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekday",456,29.1,5,21,29
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekday",457,16.44,NA,33,30
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekday",458,29.15,NA,21,24
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekday",459,29.1,4,22,32
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekday",460,24.3,NA,21,33
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",461,16.1,NA,22,26
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",462,29.1,5,24,28
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",463,12.56,5,22,18
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",464,15.23,NA,31,21
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",465,22.26,4,21,21
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",466,31.33,4,35,21
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",467,15.57,4,31,20
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",468,12.13,3,34,25
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",469,29.1,4,27,25
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",470,22.31,5,31,17
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",471,19.35,NA,25,22
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",472,29.05,4,22,21
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",473,25.22,4,27,22
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",474,12.13,5,34,19
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",475,29.05,NA,28,27
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",476,9.6,3,23,26
+"Chipotle Mexican Grill $1.99 Delivery","Mexican","Weekend",477,19.35,4,21,18
+"Cho Dang Gol","Korean","Weekday",478,12.18,5,20,26
+"Cho Dang Gol","Korean","Weekend",479,11.84,5,25,16
+"Cho Dang Gol","Korean","Weekend",480,29.25,4,23,21
+"Cho Dang Gol","Korean","Weekend",481,5.77,5,21,17
+"Cho Dang Gol","Korean","Weekend",482,12.13,4,29,16
+"Cho Dang Gol","Korean","Weekend",483,14.02,NA,25,20
+"Delicatessen","American","Weekend",489,12.18,NA,24,17
+"Delicatessen","American","Weekend",490,11.64,NA,27,27
+"Delicatessen","American","Weekend",491,32.98,5,34,16
+"Delicatessen","American","Weekend",492,24.2,4,21,19
+"Delicatessen","American","Weekend",493,32.93,4,30,18
+"Dickson's Farmstand Meats","American","Weekend",496,15.72,4,23,28
+"Dickson's Farmstand Meats","American","Weekend",497,33.03,5,35,20
+"Dickson's Farmstand Meats","American","Weekend",498,12.18,5,21,20
+"Dirty Bird To Go (archived)","American","Weekend",500,12.13,4,22,27
+"Dirty Bird To Go (archived)","American","Weekend",501,8.54,NA,32,30
+"Dirty Bird To Go (archived)","American","Weekend",502,15.57,NA,30,24
+"Dirty Bird to Go","American","Weekday",503,12.08,NA,23,32
+"Dirty Bird to Go","American","Weekday",504,11.59,4,25,24
+"Dirty Bird to Go","American","Weekday",505,12.18,NA,20,24
+"Dirty Bird to Go","American","Weekend",506,19.4,4,25,19
+"Don's Bogam BBQ & Wine Bar","Korean","Weekend",507,12.23,NA,32,20
+"Don's Bogam BBQ & Wine Bar","Korean","Weekend",508,12.61,4,25,26
+"Don's Bogam BBQ & Wine Bar","Korean","Weekend",509,14.07,3,33,16
+"Donburi-ya","Japanese","Weekday",510,6.64,NA,21,29
+"Donburi-ya","Japanese","Weekday",511,8.01,5,30,30
+"Donburi-ya","Japanese","Weekday",512,15.86,5,28,28
+"Donburi-ya","Japanese","Weekend",513,14.7,NA,30,27
+"Donburi-ya","Japanese","Weekend",514,12.18,NA,23,23
+"Donburi-ya","Japanese","Weekend",515,5.77,NA,27,29
+"Donburi-ya","Japanese","Weekend",516,12.37,5,24,17
+"Dos Caminos","Mexican","Weekday",517,12.18,5,24,30
+"Dos Caminos","Mexican","Weekday",518,8.1,NA,23,26
+"Dos Caminos","Mexican","Weekday",519,12.08,5,26,26
+"Dos Caminos","Mexican","Weekend",520,16.06,NA,35,19
+"Dos Caminos","Mexican","Weekend",521,11.59,NA,33,22
+"Dos Caminos","Mexican","Weekend",522,6.11,5,26,21
+"Dos Caminos","Mexican","Weekend",523,22.36,NA,30,26
+"Dos Caminos","Mexican","Weekend",524,6.74,5,32,26
+"DuMont Burger","American","Weekend",526,29.05,5,22,30
+"DuMont Burger","American","Weekend",527,24.25,3,28,20
+"DuMont Burger","American","Weekend",528,12.56,NA,35,19
+"Empanada Mama (closed)","Mexican","Weekday",531,5.92,3,34,25
+"Empanada Mama (closed)","Mexican","Weekday",532,24.3,NA,25,24
+"Empanada Mama (closed)","Mexican","Weekday",533,19.98,4,23,32
+"Empanada Mama (closed)","Mexican","Weekend",534,15.57,4,24,20
+"Empanada Mama (closed)","Mexican","Weekend",535,15.37,3,35,30
+"Empanada Mama (closed)","Mexican","Weekend",536,14.21,NA,27,25
+"Empanada Mama (closed)","Mexican","Weekend",537,11.88,5,23,27
+"Empanada Mama (closed)","Mexican","Weekend",538,19.35,5,29,22
+"Empanada Mama (closed)","Mexican","Weekend",539,22.75,NA,29,18
+"Empanada Mama (closed)","Mexican","Weekend",540,8.1,5,23,22
+"Empanada Mama (closed)","Mexican","Weekend",541,12.13,5,21,22
+"Empanada Mama (closed)","Mexican","Weekend",542,12.37,NA,29,25
+"Empanada Mama (closed)","Mexican","Weekend",543,31.38,5,24,18
+"Five Guys Burgers and Fries","American","Weekday",545,6.4,5,23,32
+"Five Guys Burgers and Fries","American","Weekday",546,13,5,30,27
+"Five Guys Burgers and Fries","American","Weekday",547,12.08,NA,28,27
+"Five Guys Burgers and Fries","American","Weekday",548,14.12,5,23,32
+"Five Guys Burgers and Fries","American","Weekday",549,19.45,3,28,28
+"Five Guys Burgers and Fries","American","Weekday",550,5.72,NA,22,24
+"Five Guys Burgers and Fries","American","Weekday",551,14.07,NA,24,26
+"Five Guys Burgers and Fries","American","Weekend",552,12.13,NA,26,15
+"Five Guys Burgers and Fries","American","Weekend",553,14.12,4,27,27
+"Five Guys Burgers and Fries","American","Weekend",554,14.12,4,28,25
+"Five Guys Burgers and Fries","American","Weekend",555,13.05,NA,34,27
+"Five Guys Burgers and Fries","American","Weekend",556,29.15,NA,20,16
+"Five Guys Burgers and Fries","American","Weekend",557,24.3,5,30,20
+"Five Guys Burgers and Fries","American","Weekend",558,16.01,NA,27,19
+"Five Guys Burgers and Fries","American","Weekend",559,12.08,NA,20,18
+"Five Guys Burgers and Fries","American","Weekend",560,12.23,5,22,22
+"Five Guys Burgers and Fries","American","Weekend",561,33.03,NA,29,25
+"Five Guys Burgers and Fries","American","Weekend",562,12.18,NA,22,26
+"Five Guys Burgers and Fries","American","Weekend",563,16.05,4,29,18
+"Five Guys Burgers and Fries","American","Weekend",564,33.03,5,29,15
+"Five Guys Burgers and Fries","American","Weekend",565,24.2,4,21,24
+"Five Guys Burgers and Fries","American","Weekend",566,9.27,4,23,25
+"Five Guys Burgers and Fries","American","Weekend",567,25.27,5,27,29
+"Five Guys Burgers and Fries","American","Weekend",568,24.3,5,28,18
+"Five Guys Burgers and Fries","American","Weekend",569,19.45,5,22,23
+"Five Guys Burgers and Fries","American","Weekend",570,22.75,5,30,20
+"Five Guys Burgers and Fries","American","Weekend",571,12.18,NA,21,19
+"Five Guys Burgers and Fries","American","Weekend",572,13,4,29,27
+"Five Guys Burgers and Fries","American","Weekend",573,29.73,5,21,25
+"Five Leaves","American","Weekday",574,6.26,5,31,26
+"Five Leaves","American","Weekday",575,10.24,NA,22,25
+"Five Leaves","American","Weekend",576,9.17,4,34,23
+"Five Leaves","American","Weekend",577,12.13,NA,23,15
+"Friend of a Farmer","American","Weekend",579,24.2,NA,33,27
+"Friend of a Farmer","American","Weekend",580,9.75,NA,26,30
+"Friend of a Farmer","American","Weekend",581,9.7,NA,35,22
+"Go! Go! Curry!","Japanese","Weekday",584,14.02,4,22,27
+"Go! Go! Curry!","Japanese","Weekend",585,20.18,3,22,29
+"Go! Go! Curry!","Japanese","Weekend",586,33.03,NA,22,15
+"Grand Sichuan International","Chinese","Weekday",587,25.27,5,35,30
+"Grand Sichuan International","Chinese","Weekday",588,7.66,5,33,31
+"Grand Sichuan International","Chinese","Weekend",589,32.93,NA,32,28
+"Grand Sichuan International","Chinese","Weekend",590,12.23,NA,24,28
+"Han Dynasty","Chinese","Weekday",594,12.18,NA,26,26
+"Han Dynasty","Chinese","Weekday",595,14.8,4,23,25
+"Han Dynasty","Chinese","Weekday",596,16.44,NA,23,29
+"Han Dynasty","Chinese","Weekday",597,12.18,3,33,29
+"Han Dynasty","Chinese","Weekday",598,33.03,5,35,32
+"Han Dynasty","Chinese","Weekday",599,5.67,4,21,31
+"Han Dynasty","Chinese","Weekday",600,33.03,NA,33,31
+"Han Dynasty","Chinese","Weekday",601,34.19,NA,21,31
+"Han Dynasty","Chinese","Weekday",602,29.15,NA,20,24
+"Han Dynasty","Chinese","Weekday",603,9.51,NA,24,27
+"Han Dynasty","Chinese","Weekend",604,12.13,5,33,27
+"Han Dynasty","Chinese","Weekend",605,16.01,5,30,16
+"Han Dynasty","Chinese","Weekend",606,21.93,NA,24,20
+"Han Dynasty","Chinese","Weekend",607,29.15,NA,31,19
+"Han Dynasty","Chinese","Weekend",608,12.08,5,22,23
+"Han Dynasty","Chinese","Weekend",609,12.18,NA,30,15
+"Han Dynasty","Chinese","Weekend",610,19.3,NA,34,21
+"Han Dynasty","Chinese","Weekend",611,12.23,3,33,27
+"Han Dynasty","Chinese","Weekend",612,6.84,5,22,22
+"Han Dynasty","Chinese","Weekend",613,14.02,NA,24,15
+"Han Dynasty","Chinese","Weekend",614,7.23,5,21,18
+"Han Dynasty","Chinese","Weekend",615,12.95,NA,20,25
+"Han Dynasty","Chinese","Weekend",616,24.25,5,33,26
+"Han Dynasty","Chinese","Weekend",617,14.16,NA,30,23
+"Han Dynasty","Chinese","Weekend",618,19.4,NA,35,26
+"Han Dynasty","Chinese","Weekend",619,29.15,NA,29,21
+"Han Dynasty","Chinese","Weekend",620,6.64,NA,25,29
+"Han Dynasty","Chinese","Weekend",621,8.97,4,33,19
+"Han Dynasty","Chinese","Weekend",622,8.54,4,31,15
+"Han Dynasty","Chinese","Weekend",623,24.2,5,23,15
+"Han Dynasty","Chinese","Weekend",624,22.31,3,23,29
+"Han Dynasty","Chinese","Weekend",625,16.2,NA,29,18
+"Han Dynasty","Chinese","Weekend",626,22.31,5,29,15
+"Han Dynasty","Chinese","Weekend",627,29.2,NA,26,30
+"Han Dynasty","Chinese","Weekend",628,12.13,NA,20,25
+"Han Dynasty","Chinese","Weekend",629,14.75,NA,30,16
+"Han Dynasty","Chinese","Weekend",630,8.1,5,23,26
+"Han Dynasty","Chinese","Weekend",631,13.34,4,34,27
+"Han Dynasty","Chinese","Weekend",632,7.71,5,22,18
+"Han Dynasty","Chinese","Weekend",633,14.12,4,35,19
+"Han Dynasty","Chinese","Weekend",634,13,4,32,22
+"Han Dynasty","Chinese","Weekend",635,12.08,5,27,29
+"Han Dynasty","Chinese","Weekend",636,9.75,NA,29,25
+"Han Dynasty","Chinese","Weekend",637,29.15,NA,27,15
+"Han Dynasty","Chinese","Weekend",638,5.82,NA,26,24
+"Han Dynasty","Chinese","Weekend",639,13.78,5,27,20
+"Hatsuhana","Japanese","Weekday",643,17.03,4,35,33
+"Hatsuhana","Japanese","Weekend",644,14.07,NA,26,17
+"Hatsuhana","Japanese","Weekend",645,14.07,5,27,24
+"Hatsuhana","Japanese","Weekend",646,8.97,4,25,26
+"Hatsuhana","Japanese","Weekend",647,29.15,3,33,28
+"Hatsuhana","Japanese","Weekend",648,29.49,4,22,23
+"Hill Country Fried Chicken","Southern","Weekday",652,12.23,4,20,29
+"Hill Country Fried Chicken","Southern","Weekday",653,29.78,NA,35,33
+"Hill Country Fried Chicken","Southern","Weekday",654,31.43,5,25,28
+"Hill Country Fried Chicken","Southern","Weekday",655,22.31,3,21,25
+"Hill Country Fried Chicken","Southern","Weekend",656,12.47,NA,29,28
+"Hill Country Fried Chicken","Southern","Weekend",657,16.93,5,33,21
+"Hill Country Fried Chicken","Southern","Weekend",658,11.64,4,35,21
+"Hill Country Fried Chicken","Southern","Weekend",659,24.2,4,25,15
+"Hill Country Fried Chicken","Southern","Weekend",660,14.12,5,25,15
+"Hill Country Fried Chicken","Southern","Weekend",661,29.35,4,26,24
+"Hill Country Fried Chicken","Southern","Weekend",662,29.15,5,33,25
+"Hill Country Fried Chicken","Southern","Weekend",663,14.84,4,21,21
+"Hill Country Fried Chicken","Southern","Weekend",664,14.79,5,35,15
+"Hill Country Fried Chicken","Southern","Weekend",665,29.15,NA,20,17
+"Hummus Place","Middle Eastern","Weekend",669,9.75,5,28,28
+"Hummus Place","Middle Eastern","Weekend",670,29.05,5,26,17
+"Hummus Place","Middle Eastern","Weekend",671,16.15,4,30,28
+"Izakaya Ten","Japanese","Weekday",674,12.23,5,23,24
+"Izakaya Ten","Japanese","Weekend",675,13.05,3,34,23
+"Izakaya Ten","Japanese","Weekend",676,6.02,NA,24,19
+"J. G. Melon","American","Weekday",677,19.4,4,35,26
+"J. G. Melon","American","Weekday",678,6.06,4,24,27
+"J. G. Melon","American","Weekday",679,6.07,3,29,25
+"J. G. Melon","American","Weekday",680,7.33,NA,31,30
+"J. G. Melon","American","Weekday",681,10.43,5,35,29
+"J. G. Melon","American","Weekday",682,8.25,3,34,33
+"J. G. Melon","American","Weekend",683,12.18,NA,32,22
+"J. G. Melon","American","Weekend",684,19.45,5,24,15
+"J. G. Melon","American","Weekend",685,12.66,4,23,20
+"J. G. Melon","American","Weekend",686,14.6,5,32,24
+"J. G. Melon","American","Weekend",687,8.35,5,29,23
+"J. G. Melon","American","Weekend",688,6.74,5,20,29
+"J. G. Melon","American","Weekend",689,8.83,5,31,19
+"J. G. Melon","American","Weekend",690,29.05,NA,26,28
+"J. G. Melon","American","Weekend",691,22.26,5,22,25
+"Jack's Wife Freda","Mediterranean","Weekday",692,14.12,5,25,25
+"Jack's Wife Freda","Mediterranean","Weekday",693,12.95,3,22,33
+"Jack's Wife Freda","Mediterranean","Weekday",694,25.17,4,31,25
+"Jack's Wife Freda","Mediterranean","Weekday",695,12.18,5,23,31
+"Jack's Wife Freda","Mediterranean","Weekday",696,16.01,NA,28,33
+"Jack's Wife Freda","Mediterranean","Weekday",697,16.15,5,22,24
+"Jack's Wife Freda","Mediterranean","Weekday",698,5.67,3,24,29
+"Jack's Wife Freda","Mediterranean","Weekend",699,15.47,5,33,16
+"Jack's Wife Freda","Mediterranean","Weekend",700,12.13,4,33,23
+"Jack's Wife Freda","Mediterranean","Weekend",701,6.74,NA,25,22
+"Jack's Wife Freda","Mediterranean","Weekend",702,16.15,4,26,22
+"Jack's Wife Freda","Mediterranean","Weekend",703,12.18,3,33,23
+"Jack's Wife Freda","Mediterranean","Weekend",704,22.31,NA,23,28
+"Jack's Wife Freda","Mediterranean","Weekend",705,12.08,5,30,19
+"Jack's Wife Freda","Mediterranean","Weekend",706,8.49,NA,23,18
+"Jack's Wife Freda","Mediterranean","Weekend",707,12.13,5,21,19
+"Jack's Wife Freda","Mediterranean","Weekend",708,29.05,5,35,28
+"Jack's Wife Freda","Mediterranean","Weekend",709,12.47,5,34,20
+"Jack's Wife Freda","Mediterranean","Weekend",710,32.93,3,21,16
+"Jack's Wife Freda","Mediterranean","Weekend",711,22.75,3,35,29
+"Jack's Wife Freda","Mediterranean","Weekend",712,20.71,NA,35,16
+"Jack's Wife Freda","Mediterranean","Weekend",713,6.69,5,21,16
+"Jack's Wife Freda","Mediterranean","Weekend",714,31.43,5,34,20
+"Jack's Wife Freda","Mediterranean","Weekend",715,9.41,5,28,15
+"Jack's Wife Freda","Mediterranean","Weekend",716,31.38,NA,28,18
+"Joe's Shanghai _Àü£¾÷´","Chinese","Weekday",717,22.31,3,27,31
+"Joe's Shanghai _Àü£¾÷´","Chinese","Weekend",718,16.15,3,33,20
+"Joe's Shanghai _Àü£¾÷´","Chinese","Weekend",719,16.1,5,31,22
+"Joe's Shanghai _Àü£¾÷´","Chinese","Weekend",720,15.81,5,20,26
+"Junoon","Indian","Weekday",721,25.17,NA,23,24
+"Junoon","Indian","Weekday",722,9.22,NA,30,32
+"Junoon","Indian","Weekday",723,28.62,5,21,32
+"Junoon","Indian","Weekend",724,29.49,5,23,17
+"Junoon","Indian","Weekend",725,22.75,5,29,28
+"Kanoyama","Japanese","Weekday",727,25.27,NA,29,33
+"Kanoyama","Japanese","Weekend",728,12.81,5,23,24
+"Kanoyama","Japanese","Weekend",729,32.98,5,35,16
+"L'Express","French","Weekday",732,22.02,NA,21,27
+"L'Express","French","Weekday",733,24.2,NA,28,24
+"L'Express","French","Weekday",734,16.98,NA,35,29
+"L'Express","French","Weekday",735,11.98,5,21,28
+"L'Express","French","Weekend",736,29.2,5,21,29
+"L'Express","French","Weekend",737,19.69,3,26,17
+"Lantern Thai Kitchen","Thai","Weekday",740,21.93,NA,22,25
+"Lantern Thai Kitchen","Thai","Weekend",741,32.93,NA,34,27
+"Lantern Thai Kitchen","Thai","Weekend",742,13.97,NA,28,29
+"Lantern Thai Kitchen","Thai","Weekend",743,9.46,5,29,19
+"Lucky's Famous Burgers","American","Weekday",748,12.13,NA,23,30
+"Lucky's Famous Burgers","American","Weekday",749,12.13,5,21,30
+"Lucky's Famous Burgers","American","Weekend",750,5.77,4,21,20
+"Lucky's Famous Burgers","American","Weekend",751,6.01,NA,33,16
+"Lucky's Famous Burgers","American","Weekend",752,11.59,5,26,23
+"Lucky's Famous Burgers","American","Weekend",753,16.2,5,32,27
+"Mamoun's Falafel","Mediterranean","Weekday",754,5.92,NA,31,33
+"Mamoun's Falafel","Mediterranean","Weekday",755,12.18,5,25,30
+"Mamoun's Falafel","Mediterranean","Weekend",756,9.07,NA,20,24
+"Mamoun's Falafel","Mediterranean","Weekend",757,14.41,5,33,26
+"Mamoun's Falafel","Mediterranean","Weekend",758,14.12,3,31,15
+"Mamoun's Falafel","Mediterranean","Weekend",759,12.61,4,21,17
+"Mamoun's Falafel","Mediterranean","Weekend",760,14.46,NA,20,29
+"Melt Shop","American","Weekday",762,11.69,4,21,27
+"Melt Shop","American","Weekday",763,9.02,NA,29,24
+"Melt Shop","American","Weekday",764,9.12,NA,29,33
+"Melt Shop","American","Weekend",765,9.6,5,30,16
+"Melt Shop","American","Weekend",766,16.98,5,30,19
+"Melt Shop","American","Weekend",767,25.27,5,27,30
+"Melt Shop","American","Weekend",768,12.66,3,27,26
+"Melt Shop","American","Weekend",769,12.56,4,25,23
+"Melt Shop","American","Weekend",770,29.15,4,26,17
+"Melt Shop","American","Weekend",771,19.4,4,30,25
+"Melt Shop","American","Weekend",772,21.93,5,30,18
+"Mission Cantina","Mexican","Weekend",775,16.2,5,31,18
+"Mission Cantina","Mexican","Weekend",776,12.08,NA,30,18
+"Mission Cantina","Mexican","Weekend",777,29.15,NA,31,26
+"Mission Cantina","Mexican","Weekend",778,15.57,5,21,28
+"Mission Cantina","Mexican","Weekend",779,14.45,NA,27,29
+"Momoya","Japanese","Weekday",780,32.93,3,28,27
+"Momoya","Japanese","Weekday",781,16.98,5,31,32
+"Momoya","Japanese","Weekday",782,14.02,4,24,30
+"Momoya","Japanese","Weekday",783,6.84,NA,21,24
+"Momoya","Japanese","Weekday",784,19.35,NA,29,24
+"Momoya","Japanese","Weekday",785,16.05,4,34,33
+"Momoya","Japanese","Weekday",786,25.27,5,31,30
+"Momoya","Japanese","Weekday",787,8.54,4,28,29
+"Momoya","Japanese","Weekday",788,29.35,NA,31,30
+"Momoya","Japanese","Weekday",789,29.1,4,21,29
+"Momoya","Japanese","Weekday",790,12.23,3,32,24
+"Momoya","Japanese","Weekend",791,19.35,4,27,28
+"Momoya","Japanese","Weekend",792,24.3,4,35,30
+"Momoya","Japanese","Weekend",793,22.85,4,32,17
+"Momoya","Japanese","Weekend",794,9.02,NA,21,30
+"Momoya","Japanese","Weekend",795,14.21,NA,24,30
+"Momoya","Japanese","Weekend",796,15.81,5,25,15
+"Momoya","Japanese","Weekend",797,12.18,4,26,25
+"Momoya","Japanese","Weekend",798,6.02,5,28,20
+"Momoya","Japanese","Weekend",799,8.05,NA,31,25
+"Momoya","Japanese","Weekend",800,11.59,5,20,21
+"Momoya","Japanese","Weekend",801,9.55,5,30,26
+"Momoya","Japanese","Weekend",802,31.43,NA,24,17
+"Momoya","Japanese","Weekend",803,8.1,NA,32,27
+"Momoya","Japanese","Weekend",804,24.3,5,28,20
+"Momoya","Japanese","Weekend",805,12.18,4,27,25
+"Momoya","Japanese","Weekend",806,11.59,3,24,29
+"Momoya","Japanese","Weekend",807,9.41,5,26,20
+"Momoya","Japanese","Weekend",808,12.13,5,22,21
+"Momoya","Japanese","Weekend",809,19.4,4,27,16
+"Nobu Next Door","Japanese","Weekday",812,15.76,NA,33,31
+"Nobu Next Door","Japanese","Weekday",813,15.76,NA,27,28
+"Nobu Next Door","Japanese","Weekday",814,16.3,3,20,24
+"Nobu Next Door","Japanese","Weekday",815,5.67,5,33,25
+"Nobu Next Door","Japanese","Weekday",816,29.29,4,30,24
+"Nobu Next Door","Japanese","Weekday",817,12.23,5,31,29
+"Nobu Next Door","Japanese","Weekday",818,5.77,4,29,24
+"Nobu Next Door","Japanese","Weekday",819,15.13,NA,21,30
+"Nobu Next Door","Japanese","Weekday",820,29.1,3,35,27
+"Nobu Next Door","Japanese","Weekday",821,7.86,5,20,27
+"Nobu Next Door","Japanese","Weekday",822,13.97,NA,27,24
+"Nobu Next Door","Japanese","Weekday",823,29.15,5,28,25
+"Nobu Next Door","Japanese","Weekday",824,8.97,NA,22,31
+"Nobu Next Door","Japanese","Weekend",825,16.06,NA,31,23
+"Nobu Next Door","Japanese","Weekend",826,19.35,4,28,30
+"Nobu Next Door","Japanese","Weekend",827,12.66,NA,20,21
+"Nobu Next Door","Japanese","Weekend",828,4.47,5,28,26
+"Nobu Next Door","Japanese","Weekend",829,19.4,NA,28,29
+"Nobu Next Door","Japanese","Weekend",830,9.22,NA,29,23
+"Nobu Next Door","Japanese","Weekend",831,12.46,4,35,28
+"Nobu Next Door","Japanese","Weekend",832,12.18,5,32,23
+"Nobu Next Door","Japanese","Weekend",833,9.7,5,30,29
+"Nobu Next Door","Japanese","Weekend",834,29.05,5,33,29
+"Nobu Next Door","Japanese","Weekend",835,29.15,NA,27,15
+"Nobu Next Door","Japanese","Weekend",836,25.17,4,31,29
+"Nobu Next Door","Japanese","Weekend",837,25.17,NA,21,16
+"Nobu Next Door","Japanese","Weekend",838,6.74,NA,31,29
+"Nobu Next Door","Japanese","Weekend",839,11.59,5,26,24
+"Nobu Next Door","Japanese","Weekend",840,12.08,NA,21,19
+"Nobu Next Door","Japanese","Weekend",841,9.7,NA,21,19
+"Nobu Next Door","Japanese","Weekend",842,11.11,NA,25,30
+"Nobu Next Door","Japanese","Weekend",843,5.77,4,25,29
+"Nobu Next Door","Japanese","Weekend",844,12.18,4,29,20
+"Nobu Next Door","Japanese","Weekend",845,9.51,NA,25,29
+"Nobu Next Door","Japanese","Weekend",846,15.86,5,29,23
+"Nobu Next Door","Japanese","Weekend",847,15.91,4,26,15
+"Nobu Next Door","Japanese","Weekend",848,12.13,NA,28,16
+"Nobu Next Door","Japanese","Weekend",849,14.12,3,30,19
+"Nobu Next Door","Japanese","Weekend",850,9.41,NA,32,30
+"Nobu Next Door","Japanese","Weekend",851,33.37,4,32,21
+"Nobu Next Door","Japanese","Weekend",852,9.17,NA,24,15
+"Nobu Next Door","Japanese","Weekend",853,6.02,5,33,24
+"Olea","Mediterranean","Weekday",854,6.69,NA,20,28
+"Olea","Mediterranean","Weekend",855,12.23,4,29,24
+"Olea","Mediterranean","Weekend",856,24.2,NA,20,16
+"Osteria Morini","Italian","Weekday",859,9.22,4,29,33
+"Osteria Morini","Italian","Weekday",860,24.25,NA,22,24
+"Osteria Morini","Italian","Weekday",861,24.2,3,28,28
+"Osteria Morini","Italian","Weekday",862,6.79,4,32,29
+"Osteria Morini","Italian","Weekend",863,5.77,3,24,19
+"Osteria Morini","Italian","Weekend",864,12.95,5,26,28
+"Osteria Morini","Italian","Weekend",865,12.13,5,22,26
+"Osteria Morini","Italian","Weekend",866,9.51,NA,22,26
+"Osteria Morini","Italian","Weekend",867,9.17,NA,25,22
+"Osteria Morini","Italian","Weekend",868,8.3,NA,27,19
+"Osteria Morini","Italian","Weekend",869,8.88,NA,34,26
+"Osteria Morini","Italian","Weekend",870,9.07,NA,33,16
+"Osteria Morini","Italian","Weekend",871,14.55,NA,34,22
+"Osteria Morini","Italian","Weekend",872,19.45,NA,26,29
+"Otto Enoteca Pizzeria","Italian","Weekday",873,13.05,5,33,27
+"Otto Enoteca Pizzeria","Italian","Weekday",874,19.4,4,32,28
+"Otto Enoteca Pizzeria","Italian","Weekday",875,24.25,NA,31,30
+"Otto Enoteca Pizzeria","Italian","Weekend",876,9.61,5,26,30
+"Otto Enoteca Pizzeria","Italian","Weekend",877,14.99,NA,29,21
+"Otto Enoteca Pizzeria","Italian","Weekend",878,12.13,5,33,21
+"Otto Enoteca Pizzeria","Italian","Weekend",879,12.18,5,21,20
+"Otto Enoteca Pizzeria","Italian","Weekend",880,24.2,NA,34,15
+"Otto Enoteca Pizzeria","Italian","Weekend",881,14.02,NA,24,16
+"Otto Enoteca Pizzeria","Italian","Weekend",882,29.05,5,24,18
+"Otto Enoteca Pizzeria","Italian","Weekend",883,22.36,5,26,27
+"Otto Enoteca Pizzeria","Italian","Weekend",884,16.15,NA,35,22
+"P.J. Clarke's","American","Weekday",885,25.27,5,34,29
+"P.J. Clarke's","American","Weekday",886,21.34,5,25,28
+"P.J. Clarke's","American","Weekday",887,14.07,5,33,26
+"P.J. Clarke's","American","Weekday",888,5.92,3,33,30
+"P.J. Clarke's","American","Weekday",889,15.62,5,27,32
+"P.J. Clarke's","American","Weekday",890,12.18,5,30,24
+"P.J. Clarke's","American","Weekend",891,12.18,3,22,28
+"P.J. Clarke's","American","Weekend",892,29.2,NA,30,22
+"P.J. Clarke's","American","Weekend",893,31.43,4,31,23
+"P.J. Clarke's","American","Weekend",894,31.33,4,26,19
+"P.J. Clarke's","American","Weekend",895,31.38,NA,31,23
+"P.J. Clarke's","American","Weekend",896,24.25,NA,24,15
+"P.J. Clarke's","American","Weekend",897,6.11,4,27,25
+"P.J. Clarke's","American","Weekend",898,15.96,NA,27,18
+"P.J. Clarke's","American","Weekend",899,4.71,NA,23,15
+"Parm","Italian","Weekday",900,15.91,NA,32,28
+"Parm","Italian","Weekday",901,22.75,NA,30,27
+"Parm","Italian","Weekday",902,21.83,NA,23,32
+"Parm","Italian","Weekday",903,19.35,4,23,26
+"Parm","Italian","Weekday",904,14.55,5,30,32
+"Parm","Italian","Weekday",905,12.13,4,23,31
+"Parm","Italian","Weekday",906,12.56,NA,32,28
+"Parm","Italian","Weekday",907,22.8,5,33,33
+"Parm","Italian","Weekday",908,19.4,NA,24,28
+"Parm","Italian","Weekday",909,10.14,NA,24,28
+"Parm","Italian","Weekday",910,9.07,4,23,30
+"Parm","Italian","Weekday",911,29.39,NA,26,30
+"Parm","Italian","Weekday",912,25.27,NA,27,27
+"Parm","Italian","Weekday",913,8.2,NA,34,24
+"Parm","Italian","Weekday",914,25.17,4,33,32
+"Parm","Italian","Weekday",915,29.15,5,23,27
+"Parm","Italian","Weekday",916,28.57,5,22,32
+"Parm","Italian","Weekday",917,11.59,5,35,29
+"Parm","Italian","Weekday",918,6.74,5,25,30
+"Parm","Italian","Weekday",919,31.43,5,28,25
+"Parm","Italian","Weekday",920,12.23,NA,27,26
+"Parm","Italian","Weekday",921,15.86,NA,30,24
+"Parm","Italian","Weekday",922,14.02,NA,28,32
+"Parm","Italian","Weekday",923,17.03,3,21,27
+"Parm","Italian","Weekday",924,8.59,5,32,33
+"Parm","Italian","Weekday",925,19.45,NA,28,28
+"Parm","Italian","Weekend",926,19.35,4,35,19
+"Parm","Italian","Weekend",927,14.12,3,28,22
+"Parm","Italian","Weekend",928,12.13,3,34,22
+"Parm","Italian","Weekend",929,12.13,NA,25,29
+"Parm","Italian","Weekend",930,9.22,4,31,25
+"Parm","Italian","Weekend",931,6.69,5,24,28
+"Parm","Italian","Weekend",932,13.05,NA,28,27
+"Parm","Italian","Weekend",933,12.18,NA,29,16
+"Parm","Italian","Weekend",934,29.35,5,29,17
+"Parm","Italian","Weekend",935,15.77,4,27,18
+"Parm","Italian","Weekend",936,25.27,5,28,16
+"Parm","Italian","Weekend",937,7.38,NA,26,20
+"Parm","Italian","Weekend",938,21.93,4,22,25
+"Parm","Italian","Weekend",939,12.08,3,25,28
+"Parm","Italian","Weekend",940,15.37,NA,29,23
+"Parm","Italian","Weekend",941,22.36,4,21,30
+"Parm","Italian","Weekend",942,22.8,NA,35,20
+"Parm","Italian","Weekend",943,16.44,4,23,22
+"Parm","Italian","Weekend",944,31.33,NA,24,16
+"Parm","Italian","Weekend",945,12.13,4,29,26
+"Parm","Italian","Weekend",946,12.18,NA,32,26
+"Parm","Italian","Weekend",947,14.79,NA,33,29
+"Parm","Italian","Weekend",948,5.72,4,26,27
+"Parm","Italian","Weekend",949,21.88,4,23,30
+"Parm","Italian","Weekend",950,9.17,NA,25,17
+"Parm","Italian","Weekend",951,24.25,4,34,21
+"Parm","Italian","Weekend",952,22.36,NA,27,27
+"Parm","Italian","Weekend",953,12.47,NA,22,24
+"Parm","Italian","Weekend",954,16.3,3,26,23
+"Parm","Italian","Weekend",955,8.68,NA,20,19
+"Parm","Italian","Weekend",956,8.78,3,23,26
+"Parm","Italian","Weekend",957,29.1,5,30,26
+"Parm","Italian","Weekend",958,5.92,3,21,25
+"Parm","Italian","Weekend",959,14.99,NA,34,24
+"Parm","Italian","Weekend",960,12.08,5,30,25
+"Parm","Italian","Weekend",961,13.68,4,33,21
+"Parm","Italian","Weekend",962,29.44,4,33,24
+"Parm","Italian","Weekend",963,9.12,NA,23,21
+"Parm","Italian","Weekend",964,16.44,5,29,26
+"Parm","Italian","Weekend",965,6.79,3,21,30
+"Parm","Italian","Weekend",966,12.23,NA,21,30
+"Parm","Italian","Weekend",967,12.13,3,23,15
+"Pepe Rosso To Go","Italian","Weekday",970,12.23,3,24,24
+"Pepe Rosso To Go","Italian","Weekend",971,16.3,NA,23,30
+"Pepe Rosso To Go","Italian","Weekend",972,13.73,NA,21,28
+"Pepe Rosso To Go","Italian","Weekend",973,22.8,5,35,24
+"Pepe Rosso To Go","Italian","Weekend",974,24.2,3,27,19
+"Pepe Rosso To Go","Italian","Weekend",975,15.57,5,29,27
+"Pepe Rosso To Go","Italian","Weekend",976,12.13,4,25,18
+"Pinto Nouveau Thai Bistro","Thai","Weekend",980,17.08,NA,23,16
+"Pinto Nouveau Thai Bistro","Thai","Weekend",981,19.35,4,34,24
+"Pinto Nouveau Thai Bistro","Thai","Weekend",982,11.79,5,21,27
+"Pinto Nouveau Thai Bistro","Thai","Weekend",983,24.2,5,29,15
+"Prosperity Dumpling","Chinese","Weekday",987,12.18,NA,26,24
+"Prosperity Dumpling","Chinese","Weekend",988,13.63,5,25,24
+"Prosperity Dumpling","Chinese","Weekend",989,14.02,5,20,30
+"Pylos","Mediterranean","Weekday",990,35.41,4,21,29
+"Pylos","Mediterranean","Weekday",991,14.12,4,26,24
+"Pylos","Mediterranean","Weekday",992,14.02,3,30,29
+"Pylos","Mediterranean","Weekend",993,19.4,NA,28,29
+"Pylos","Mediterranean","Weekend",994,11.3,3,24,23
+"Ravagh Persian Grill","Middle Eastern","Weekday",995,14.07,5,34,33
+"Ravagh Persian Grill","Middle Eastern","Weekend",996,16.93,NA,33,21
+"Ravagh Persian Grill","Middle Eastern","Weekend",997,16.06,NA,28,21
+"RedFarm Broadway","Chinese","Weekday",998,9.27,4,32,29
+"RedFarm Broadway","Chinese","Weekday",999,24.3,5,24,31
+"RedFarm Broadway","Chinese","Weekday",1000,24.25,5,25,25
+"RedFarm Broadway","Chinese","Weekday",1001,16.01,4,23,27
+"RedFarm Broadway","Chinese","Weekday",1002,12.9,3,29,29
+"RedFarm Broadway","Chinese","Weekday",1003,24.2,NA,22,33
+"RedFarm Broadway","Chinese","Weekday",1004,8.68,3,33,30
+"RedFarm Broadway","Chinese","Weekday",1005,12.61,NA,26,27
+"RedFarm Broadway","Chinese","Weekday",1006,15.96,4,35,33
+"RedFarm Broadway","Chinese","Weekday",1007,12.32,NA,30,27
+"RedFarm Broadway","Chinese","Weekday",1008,20.18,NA,30,26
+"RedFarm Broadway","Chinese","Weekday",1009,14.07,NA,35,33
+"RedFarm Broadway","Chinese","Weekday",1010,22.8,NA,33,33
+"RedFarm Broadway","Chinese","Weekday",1011,14.02,NA,25,26
+"RedFarm Broadway","Chinese","Weekday",1012,12.56,4,35,33
+"RedFarm Broadway","Chinese","Weekend",1013,12.13,4,20,19
+"RedFarm Broadway","Chinese","Weekend",1014,31.33,3,33,23
+"RedFarm Broadway","Chinese","Weekend",1015,6.06,3,32,18
+"RedFarm Broadway","Chinese","Weekend",1016,12.23,4,21,21
+"RedFarm Broadway","Chinese","Weekend",1017,21.39,5,23,24
+"RedFarm Broadway","Chinese","Weekend",1018,14.55,5,28,20
+"RedFarm Broadway","Chinese","Weekend",1019,12.61,5,28,21
+"RedFarm Broadway","Chinese","Weekend",1020,24.2,5,31,19
+"RedFarm Broadway","Chinese","Weekend",1021,9.65,5,30,20
+"RedFarm Broadway","Chinese","Weekend",1022,11.64,3,26,21
+"RedFarm Broadway","Chinese","Weekend",1023,16.1,5,21,27
+"RedFarm Broadway","Chinese","Weekend",1024,19.4,5,24,25
+"RedFarm Broadway","Chinese","Weekend",1025,29.1,NA,22,23
+"RedFarm Broadway","Chinese","Weekend",1026,24.25,5,29,22
+"RedFarm Broadway","Chinese","Weekend",1027,31.43,4,30,23
+"RedFarm Broadway","Chinese","Weekend",1028,14.12,NA,35,23
+"RedFarm Broadway","Chinese","Weekend",1029,24.3,5,27,29
+"RedFarm Broadway","Chinese","Weekend",1030,6.79,5,33,28
+"RedFarm Broadway","Chinese","Weekend",1031,22.36,NA,24,27
+"RedFarm Broadway","Chinese","Weekend",1032,14.07,3,20,15
+"RedFarm Broadway","Chinese","Weekend",1033,24.25,5,22,15
+"RedFarm Broadway","Chinese","Weekend",1034,13.1,4,26,22
+"RedFarm Broadway","Chinese","Weekend",1035,19.35,NA,24,28
+"RedFarm Broadway","Chinese","Weekend",1036,12.61,4,32,17
+"RedFarm Broadway","Chinese","Weekend",1037,6.74,NA,31,27
+"RedFarm Broadway","Chinese","Weekend",1038,5.87,4,27,22
+"RedFarm Broadway","Chinese","Weekend",1039,7.67,5,24,15
+"RedFarm Broadway","Chinese","Weekend",1040,21.93,NA,22,22
+"RedFarm Broadway","Chinese","Weekend",1041,32.98,4,25,15
+"RedFarm Broadway","Chinese","Weekend",1042,12.23,NA,32,19
+"RedFarm Broadway","Chinese","Weekend",1043,5.48,3,27,18
+"RedFarm Broadway","Chinese","Weekend",1044,14.26,NA,28,24
+"RedFarm Broadway","Chinese","Weekend",1045,19.35,5,33,18
+"RedFarm Broadway","Chinese","Weekend",1046,6.69,NA,27,24
+"RedFarm Broadway","Chinese","Weekend",1047,19.59,5,24,19
+"RedFarm Broadway","Chinese","Weekend",1048,14.07,3,34,17
+"RedFarm Broadway","Chinese","Weekend",1049,8.49,NA,24,16
+"RedFarm Broadway","Chinese","Weekend",1050,9.07,4,35,17
+"RedFarm Broadway","Chinese","Weekend",1051,31.86,4,25,19
+"RedFarm Broadway","Chinese","Weekend",1052,8.2,4,31,30
+"RedFarm Broadway","Chinese","Weekend",1053,16.2,5,29,18
+"RedFarm Broadway","Chinese","Weekend",1054,31.87,5,27,18
+"RedFarm Broadway","Chinese","Weekend",1055,12.46,4,24,20
+"RedFarm Broadway","Chinese","Weekend",1056,8.97,NA,21,16
+"RedFarm Hudson","Chinese","Weekday",1057,14.07,NA,20,32
+"RedFarm Hudson","Chinese","Weekday",1058,12.23,NA,20,25
+"RedFarm Hudson","Chinese","Weekday",1059,12.08,NA,21,26
+"RedFarm Hudson","Chinese","Weekday",1060,29.1,NA,27,26
+"RedFarm Hudson","Chinese","Weekday",1061,19.35,5,35,28
+"RedFarm Hudson","Chinese","Weekday",1062,12.23,5,25,33
+"RedFarm Hudson","Chinese","Weekday",1063,9.12,5,29,26
+"RedFarm Hudson","Chinese","Weekday",1064,5.73,NA,25,25
+"RedFarm Hudson","Chinese","Weekday",1065,29.44,4,29,32
+"RedFarm Hudson","Chinese","Weekday",1066,20.32,5,30,29
+"RedFarm Hudson","Chinese","Weekday",1067,7.03,5,32,24
+"RedFarm Hudson","Chinese","Weekend",1068,24.2,5,27,19
+"RedFarm Hudson","Chinese","Weekend",1069,6.69,NA,24,20
+"RedFarm Hudson","Chinese","Weekend",1070,14.12,4,25,24
+"RedFarm Hudson","Chinese","Weekend",1071,16.1,4,23,29
+"RedFarm Hudson","Chinese","Weekend",1072,12.18,NA,22,27
+"RedFarm Hudson","Chinese","Weekend",1073,12.13,5,28,29
+"RedFarm Hudson","Chinese","Weekend",1074,16.49,3,34,20
+"RedFarm Hudson","Chinese","Weekend",1075,5.82,5,22,22
+"RedFarm Hudson","Chinese","Weekend",1076,15.52,5,30,18
+"RedFarm Hudson","Chinese","Weekend",1077,29.34,5,27,29
+"RedFarm Hudson","Chinese","Weekend",1078,12.18,NA,20,18
+"RedFarm Hudson","Chinese","Weekend",1079,25.17,NA,21,17
+"RedFarm Hudson","Chinese","Weekend",1080,33.03,3,32,19
+"RedFarm Hudson","Chinese","Weekend",1081,12.23,4,24,19
+"RedFarm Hudson","Chinese","Weekend",1082,12.18,NA,24,27
+"RedFarm Hudson","Chinese","Weekend",1083,22.75,NA,31,30
+"RedFarm Hudson","Chinese","Weekend",1084,13.92,5,28,24
+"RedFarm Hudson","Chinese","Weekend",1085,15.96,3,21,18
+"RedFarm Hudson","Chinese","Weekend",1086,29.29,4,27,21
+"RedFarm Hudson","Chinese","Weekend",1087,14.6,3,30,28
+"RedFarm Hudson","Chinese","Weekend",1088,12.13,NA,20,22
+"RedFarm Hudson","Chinese","Weekend",1089,14.02,NA,29,22
+"RedFarm Hudson","Chinese","Weekend",1090,12.13,3,31,25
+"RedFarm Hudson","Chinese","Weekend",1091,19.35,4,31,15
+"RedFarm Hudson","Chinese","Weekend",1092,12.61,5,31,22
+"RedFarm Hudson","Chinese","Weekend",1093,9.51,3,29,26
+"RedFarm Hudson","Chinese","Weekend",1094,12.56,3,20,22
+"RedFarm Hudson","Chinese","Weekend",1095,5.77,4,33,28
+"RedFarm Hudson","Chinese","Weekend",1096,29.05,4,22,28
+"RedFarm Hudson","Chinese","Weekend",1097,32.93,NA,33,30
+"RedFarm Hudson","Chinese","Weekend",1098,4.75,3,23,25
+"RedFarm Hudson","Chinese","Weekend",1099,12.18,5,34,24
+"RedFarm Hudson","Chinese","Weekend",1100,33.03,4,26,22
+"RedFarm Hudson","Chinese","Weekend",1101,15.23,5,31,16
+"RedFarm Hudson","Chinese","Weekend",1102,25.27,NA,34,28
+"RedFarm Hudson","Chinese","Weekend",1103,12.13,NA,31,27
+"RedFarm Hudson","Chinese","Weekend",1104,29.1,NA,27,28
+"RedFarm Hudson","Chinese","Weekend",1105,21.34,NA,23,17
+"RedFarm Hudson","Chinese","Weekend",1106,19.35,NA,30,24
+"RedFarm Hudson","Chinese","Weekend",1107,11.64,NA,34,18
+"RedFarm Hudson","Chinese","Weekend",1108,14.12,5,21,24
+"RedFarm Hudson","Chinese","Weekend",1109,15.04,3,35,25
+"RedFarm Hudson","Chinese","Weekend",1110,12.08,NA,21,24
+"RedFarm Hudson","Chinese","Weekend",1111,21.29,4,32,25
+"Room Service","Thai","Weekday",1113,6.69,NA,25,32
+"Room Service","Thai","Weekend",1114,22.31,NA,22,15
+"Room Service","Thai","Weekend",1115,12.23,NA,35,16
+"Rubirosa","Italian","Weekday",1116,7.95,NA,20,26
+"Rubirosa","Italian","Weekday",1117,8,4,27,29
+"Rubirosa","Italian","Weekday",1118,22.8,5,32,27
+"Rubirosa","Italian","Weekday",1119,14.12,3,26,27
+"Rubirosa","Italian","Weekday",1120,14.12,4,26,32
+"Rubirosa","Italian","Weekday",1121,25.27,4,23,31
+"Rubirosa","Italian","Weekday",1122,15.38,NA,30,31
+"Rubirosa","Italian","Weekday",1123,24.3,3,29,31
+"Rubirosa","Italian","Weekend",1124,21.88,4,28,27
+"Rubirosa","Italian","Weekend",1125,16.2,4,21,27
+"Rubirosa","Italian","Weekend",1126,24.2,4,34,16
+"Rubirosa","Italian","Weekend",1127,12.56,4,31,17
+"Rubirosa","Italian","Weekend",1128,24.3,NA,30,26
+"Rubirosa","Italian","Weekend",1129,33.03,5,22,28
+"Rubirosa","Italian","Weekend",1130,12.95,4,30,25
+"Rubirosa","Italian","Weekend",1131,29.1,5,30,28
+"Rubirosa","Italian","Weekend",1132,5.77,NA,27,21
+"Rubirosa","Italian","Weekend",1133,12.51,5,21,15
+"Rubirosa","Italian","Weekend",1134,14.12,NA,33,15
+"Rubirosa","Italian","Weekend",1135,5.97,3,30,25
+"Rubirosa","Italian","Weekend",1136,19.4,4,34,16
+"Rubirosa","Italian","Weekend",1137,9.17,4,27,25
+"Rubirosa","Italian","Weekend",1138,21.83,3,30,27
+"Rubirosa","Italian","Weekend",1139,24.2,4,23,26
+"Rubirosa","Italian","Weekend",1140,7.33,5,26,22
+"Rubirosa","Italian","Weekend",1141,24.2,5,31,15
+"Rubirosa","Italian","Weekend",1142,12.18,NA,33,20
+"Rubirosa","Italian","Weekend",1143,32.98,NA,33,30
+"Rubirosa","Italian","Weekend",1144,8.54,NA,34,28
+"Rubirosa","Italian","Weekend",1145,12.23,NA,21,18
+"Rubirosa","Italian","Weekend",1146,14.07,5,35,16
+"Rubirosa","Italian","Weekend",1147,29.1,5,28,16
+"Rubirosa","Italian","Weekend",1148,13.92,NA,29,27
+"Rubirosa","Italian","Weekend",1149,24.2,NA,33,28
+"Rubirosa","Italian","Weekend",1150,31.67,NA,25,15
+"Rubirosa","Italian","Weekend",1151,6.55,NA,23,15
+"Rubirosa","Italian","Weekend",1152,24.35,3,30,28
+"S'MAC","American","Weekday",1154,5.92,4,34,30
+"S'MAC","American","Weekday",1155,12.61,NA,34,24
+"S'MAC","American","Weekday",1156,16.11,5,25,24
+"S'MAC","American","Weekday",1157,15.47,5,31,32
+"S'MAC","American","Weekend",1158,24.2,NA,28,17
+"S'MAC","American","Weekend",1159,9.56,NA,27,20
+"S'MAC","American","Weekend",1160,14.46,NA,34,17
+"S'MAC","American","Weekend",1161,15.57,5,34,28
+"S'MAC","American","Weekend",1162,12.37,4,30,28
+"S'MAC","American","Weekend",1163,14.55,NA,29,29
+"S'MAC","American","Weekend",1164,16.49,5,27,19
+"S'MAC","American","Weekend",1165,25.27,5,20,29
+"Sarabeth's","American","Weekday",1167,32.93,4,33,33
+"Sarabeth's","American","Weekend",1168,25.17,3,28,23
+"Sarabeth's","American","Weekend",1169,29.3,5,23,17
+"Sarabeth's East","American","Weekend",1170,17.03,3,26,30
+"Sarabeth's East","American","Weekend",1171,25.27,4,23,19
+"Sarabeth's East","American","Weekend",1172,29.3,NA,27,20
+"Sarabeth's East","American","Weekend",1173,13.78,4,34,24
+"Sarabeth's East","American","Weekend",1174,5.72,NA,33,26
+"Sarabeth's East","American","Weekend",1175,9.41,NA,25,16
+"Sarabeth's East","American","Weekend",1176,12.13,NA,34,30
+"Sarabeth's Restaurant","American","Weekday",1177,29.15,NA,20,26
+"Sarabeth's Restaurant","American","Weekday",1178,15.91,NA,20,31
+"Sarabeth's Restaurant","American","Weekend",1179,12.23,4,26,24
+"Sarabeth's Restaurant","American","Weekend",1180,12.27,5,24,24
+"Sarabeth's Restaurant","American","Weekend",1181,12.08,NA,28,26
+"Sarabeth's Restaurant","American","Weekend",1182,21.93,NA,25,27
+"Sarabeth's Restaurant","American","Weekend",1183,24.25,5,23,24
+"Saravanaa Bhavan","Indian","Weekday",1185,15.52,5,33,26
+"Saravanaa Bhavan","Indian","Weekday",1186,12.13,NA,32,26
+"Saravanaa Bhavan","Indian","Weekday",1187,24.25,5,29,26
+"Saravanaa Bhavan","Indian","Weekday",1188,9.12,5,28,28
+"Saravanaa Bhavan","Indian","Weekday",1189,9.17,NA,24,29
+"Schnipper's Quality Kitchen","American","Weekend",1190,25.22,4,33,18
+"Schnipper's Quality Kitchen","American","Weekend",1191,12.18,NA,31,22
+"Schnipper's Quality Kitchen","American","Weekend",1192,14.02,5,20,16
+"Serafina Fabulous Pizza","Italian","Weekday",1193,19.5,5,22,33
+"Serafina Fabulous Pizza","Italian","Weekday",1194,22.8,4,28,31
+"Serafina Fabulous Pizza","Italian","Weekday",1195,14.84,3,35,31
+"Serafina Fabulous Pizza","Italian","Weekend",1196,16.88,NA,33,27
+"Serafina Fabulous Pizza","Italian","Weekend",1197,13.68,5,20,20
+"Shake Shack","American","Weekday",1198,15.57,NA,28,30
+"Shake Shack","American","Weekday",1199,5.82,NA,29,29
+"Shake Shack","American","Weekday",1200,16.15,4,20,26
+"Shake Shack","American","Weekday",1201,22.31,NA,33,32
+"Shake Shack","American","Weekday",1202,11.59,3,23,25
+"Shake Shack","American","Weekday",1203,8.05,4,25,27
+"Shake Shack","American","Weekday",1204,12.08,NA,27,27
+"Shake Shack","American","Weekday",1205,16.2,NA,27,30
+"Shake Shack","American","Weekday",1206,29.1,5,29,31
+"Shake Shack","American","Weekday",1207,14.07,4,24,28
+"Shake Shack","American","Weekday",1208,33.03,NA,22,32
+"Shake Shack","American","Weekday",1209,9.02,4,23,27
+"Shake Shack","American","Weekday",1210,24.25,5,20,27
+"Shake Shack","American","Weekday",1211,24.3,4,33,30
+"Shake Shack","American","Weekday",1212,15.18,5,30,33
+"Shake Shack","American","Weekday",1213,14.94,NA,33,31
+"Shake Shack","American","Weekday",1214,29.05,4,27,29
+"Shake Shack","American","Weekday",1215,19.45,4,28,24
+"Shake Shack","American","Weekday",1216,24.3,4,35,29
+"Shake Shack","American","Weekday",1217,24.2,NA,22,31
+"Shake Shack","American","Weekday",1218,29.39,NA,23,33
+"Shake Shack","American","Weekday",1219,12.13,NA,34,26
+"Shake Shack","American","Weekday",1220,8.2,4,33,26
+"Shake Shack","American","Weekday",1221,19.74,4,35,32
+"Shake Shack","American","Weekday",1222,29.15,NA,34,28
+"Shake Shack","American","Weekday",1223,4.75,4,35,28
+"Shake Shack","American","Weekday",1224,15.28,4,30,29
+"Shake Shack","American","Weekday",1225,31.29,NA,26,32
+"Shake Shack","American","Weekday",1226,24.25,NA,32,24
+"Shake Shack","American","Weekday",1227,22.36,NA,33,25
+"Shake Shack","American","Weekday",1228,8.63,NA,31,32
+"Shake Shack","American","Weekday",1229,22.75,4,21,27
+"Shake Shack","American","Weekday",1230,21.93,NA,21,33
+"Shake Shack","American","Weekday",1231,9.07,3,35,26
+"Shake Shack","American","Weekday",1232,33.03,NA,31,28
+"Shake Shack","American","Weekday",1233,29.1,5,21,30
+"Shake Shack","American","Weekday",1234,12.23,4,31,24
+"Shake Shack","American","Weekday",1235,14.65,NA,26,33
+"Shake Shack","American","Weekday",1236,13.1,NA,20,28
+"Shake Shack","American","Weekday",1237,12.18,5,23,31
+"Shake Shack","American","Weekday",1238,6.07,4,23,27
+"Shake Shack","American","Weekday",1239,29.3,5,33,32
+"Shake Shack","American","Weekday",1240,9.07,4,21,32
+"Shake Shack","American","Weekday",1241,24.25,NA,23,30
+"Shake Shack","American","Weekday",1242,5.53,4,28,26
+"Shake Shack","American","Weekday",1243,15.96,4,28,27
+"Shake Shack","American","Weekday",1244,6.01,5,23,30
+"Shake Shack","American","Weekday",1245,12.13,3,22,27
+"Shake Shack","American","Weekday",1246,14.12,NA,31,28
+"Shake Shack","American","Weekday",1247,9.6,4,35,28
+"Shake Shack","American","Weekday",1248,6.69,5,26,32
+"Shake Shack","American","Weekday",1249,22.36,3,20,32
+"Shake Shack","American","Weekday",1250,12.23,5,35,25
+"Shake Shack","American","Weekday",1251,16.25,3,30,24
+"Shake Shack","American","Weekday",1252,22.26,5,33,32
+"Shake Shack","American","Weekday",1253,16.25,5,27,31
+"Shake Shack","American","Weekday",1254,24.2,4,29,29
+"Shake Shack","American","Weekday",1255,15.76,5,30,24
+"Shake Shack","American","Weekday",1256,5.72,3,31,24
+"Shake Shack","American","Weekday",1257,12.13,NA,22,25
+"Shake Shack","American","Weekday",1258,15.18,NA,34,30
+"Shake Shack","American","Weekday",1259,12.13,5,25,30
+"Shake Shack","American","Weekday",1260,12.95,5,20,30
+"Shake Shack","American","Weekday",1261,24.35,5,34,26
+"Shake Shack","American","Weekday",1262,12.13,5,30,26
+"Shake Shack","American","Weekday",1263,12.18,NA,26,27
+"Shake Shack","American","Weekday",1264,19.35,NA,35,33
+"Shake Shack","American","Weekday",1265,8.49,NA,33,32
+"Shake Shack","American","Weekday",1266,15.57,4,34,25
+"Shake Shack","American","Weekday",1267,5.92,5,34,24
+"Shake Shack","American","Weekday",1268,6.69,NA,20,29
+"Shake Shack","American","Weekday",1269,19.45,3,24,29
+"Shake Shack","American","Weekday",1270,17.03,5,35,32
+"Shake Shack","American","Weekday",1271,29.1,4,29,24
+"Shake Shack","American","Weekend",1272,4.8,4,22,24
+"Shake Shack","American","Weekend",1273,19.4,5,32,24
+"Shake Shack","American","Weekend",1274,12.18,4,27,23
+"Shake Shack","American","Weekend",1275,12.08,5,28,23
+"Shake Shack","American","Weekend",1276,24.2,NA,25,24
+"Shake Shack","American","Weekend",1277,25.17,5,27,26
+"Shake Shack","American","Weekend",1278,22.8,NA,30,19
+"Shake Shack","American","Weekend",1279,8.1,NA,25,24
+"Shake Shack","American","Weekend",1280,24.25,5,31,28
+"Shake Shack","American","Weekend",1281,12.18,NA,31,28
+"Shake Shack","American","Weekend",1282,19.35,4,21,29
+"Shake Shack","American","Weekend",1283,12.95,NA,32,19
+"Shake Shack","American","Weekend",1284,8.34,NA,23,28
+"Shake Shack","American","Weekend",1285,24.25,5,34,24
+"Shake Shack","American","Weekend",1286,15.52,5,33,17
+"Shake Shack","American","Weekend",1287,13,NA,20,18
+"Shake Shack","American","Weekend",1288,16.25,5,27,23
+"Shake Shack","American","Weekend",1289,9.75,5,33,25
+"Shake Shack","American","Weekend",1290,15.76,3,35,29
+"Shake Shack","American","Weekend",1291,8,5,27,23
+"Shake Shack","American","Weekend",1292,13.58,NA,25,24
+"Shake Shack","American","Weekend",1293,14.12,NA,29,30
+"Shake Shack","American","Weekend",1294,14.07,5,33,25
+"Shake Shack","American","Weekend",1295,29.1,NA,23,28
+"Shake Shack","American","Weekend",1296,12.61,4,29,19
+"Shake Shack","American","Weekend",1297,16.2,5,33,25
+"Shake Shack","American","Weekend",1298,24.3,5,21,24
+"Shake Shack","American","Weekend",1299,20.52,NA,31,26
+"Shake Shack","American","Weekend",1300,15.52,5,22,17
+"Shake Shack","American","Weekend",1301,15.76,5,24,22
+"Shake Shack","American","Weekend",1302,11.69,NA,31,28
+"Shake Shack","American","Weekend",1303,12.18,5,32,24
+"Shake Shack","American","Weekend",1304,15.77,3,29,20
+"Shake Shack","American","Weekend",1305,24.3,4,35,16
+"Shake Shack","American","Weekend",1306,8,4,24,30
+"Shake Shack","American","Weekend",1307,29.15,5,20,21
+"Shake Shack","American","Weekend",1308,9.07,NA,24,16
+"Shake Shack","American","Weekend",1309,8.1,5,26,27
+"Shake Shack","American","Weekend",1310,9.41,5,22,20
+"Shake Shack","American","Weekend",1311,31.43,5,30,19
+"Shake Shack","American","Weekend",1312,29.05,5,21,22
+"Shake Shack","American","Weekend",1313,15.77,4,35,23
+"Shake Shack","American","Weekend",1314,19.4,5,32,15
+"Shake Shack","American","Weekend",1315,21.39,4,28,18
+"Shake Shack","American","Weekend",1316,12.18,NA,29,22
+"Shake Shack","American","Weekend",1317,5.77,4,28,18
+"Shake Shack","American","Weekend",1318,8.63,NA,33,19
+"Shake Shack","American","Weekend",1319,31.43,NA,30,19
+"Shake Shack","American","Weekend",1320,16.49,5,32,22
+"Shake Shack","American","Weekend",1321,12.61,4,26,25
+"Shake Shack","American","Weekend",1322,25.22,4,35,27
+"Shake Shack","American","Weekend",1323,8.15,NA,26,17
+"Shake Shack","American","Weekend",1324,16.2,NA,20,21
+"Shake Shack","American","Weekend",1325,8.34,5,21,30
+"Shake Shack","American","Weekend",1326,14.07,NA,33,21
+"Shake Shack","American","Weekend",1327,20.23,NA,32,18
+"Shake Shack","American","Weekend",1328,5.72,NA,34,17
+"Shake Shack","American","Weekend",1329,12.23,NA,20,27
+"Shake Shack","American","Weekend",1330,15.86,3,34,20
+"Shake Shack","American","Weekend",1331,21.39,3,33,22
+"Shake Shack","American","Weekend",1332,21.83,NA,23,22
+"Shake Shack","American","Weekend",1333,20.57,5,24,19
+"Shake Shack","American","Weekend",1334,15.76,4,34,27
+"Shake Shack","American","Weekend",1335,12.23,NA,27,18
+"Shake Shack","American","Weekend",1336,6.79,4,35,30
+"Shake Shack","American","Weekend",1337,15.76,5,20,25
+"Shake Shack","American","Weekend",1338,15.91,NA,25,20
+"Shake Shack","American","Weekend",1339,5.82,NA,22,28
+"Shake Shack","American","Weekend",1340,16.93,5,35,28
+"Shake Shack","American","Weekend",1341,12.13,4,32,15
+"Shake Shack","American","Weekend",1342,29.25,4,25,19
+"Shake Shack","American","Weekend",1343,25.22,NA,28,26
+"Shake Shack","American","Weekend",1344,12.13,5,26,26
+"Shake Shack","American","Weekend",1345,6.07,4,28,19
+"Shake Shack","American","Weekend",1346,22.36,4,27,27
+"Shake Shack","American","Weekend",1347,19.4,5,33,27
+"Shake Shack","American","Weekend",1348,22.26,4,32,17
+"Shake Shack","American","Weekend",1349,21.83,NA,28,23
+"Shake Shack","American","Weekend",1350,11.64,NA,23,29
+"Shake Shack","American","Weekend",1351,15.57,NA,35,18
+"Shake Shack","American","Weekend",1352,16.98,NA,22,21
+"Shake Shack","American","Weekend",1353,5.72,NA,24,19
+"Shake Shack","American","Weekend",1354,12.18,NA,26,25
+"Shake Shack","American","Weekend",1355,14.07,5,34,17
+"Shake Shack","American","Weekend",1356,24.3,4,25,15
+"Shake Shack","American","Weekend",1357,16.06,5,30,17
+"Shake Shack","American","Weekend",1358,12.66,5,25,15
+"Shake Shack","American","Weekend",1359,12.27,5,24,28
+"Shake Shack","American","Weekend",1360,7.08,4,25,23
+"Shake Shack","American","Weekend",1361,19.89,NA,27,19
+"Shake Shack","American","Weekend",1362,13.97,5,35,27
+"Shake Shack","American","Weekend",1363,16.98,3,23,23
+"Shake Shack","American","Weekend",1364,10.38,3,24,29
+"Shake Shack","American","Weekend",1365,32.93,NA,32,25
+"Shake Shack","American","Weekend",1366,12.13,NA,30,19
+"Shake Shack","American","Weekend",1367,5.68,NA,31,30
+"Shake Shack","American","Weekend",1368,5.82,NA,26,30
+"Shake Shack","American","Weekend",1369,5.68,NA,26,18
+"Shake Shack","American","Weekend",1370,12.18,NA,23,16
+"Shake Shack","American","Weekend",1371,10.82,4,34,20
+"Shake Shack","American","Weekend",1372,22.31,NA,35,28
+"Shake Shack","American","Weekend",1373,14.07,3,21,27
+"Shake Shack","American","Weekend",1374,8.73,NA,35,17
+"Shake Shack","American","Weekend",1375,12.66,5,35,24
+"Shake Shack","American","Weekend",1376,15.57,5,32,17
+"Shake Shack","American","Weekend",1377,14.02,5,26,21
+"Shake Shack","American","Weekend",1378,12.18,NA,23,18
+"Shake Shack","American","Weekend",1379,7.23,3,29,18
+"Shake Shack","American","Weekend",1380,13.39,NA,30,22
+"Shake Shack","American","Weekend",1381,20.52,3,31,15
+"Shake Shack","American","Weekend",1382,25.22,3,27,25
+"Shake Shack","American","Weekend",1383,14.02,4,20,21
+"Shake Shack","American","Weekend",1384,31.43,3,31,24
+"Shake Shack","American","Weekend",1385,6.79,NA,20,25
+"Shake Shack","American","Weekend",1386,10.24,NA,22,21
+"Shake Shack","American","Weekend",1387,5.63,NA,27,16
+"Shake Shack","American","Weekend",1388,16.1,NA,28,24
+"Shake Shack","American","Weekend",1389,15.96,3,30,21
+"Shake Shack","American","Weekend",1390,19.4,NA,30,18
+"Shake Shack","American","Weekend",1391,29.49,5,20,24
+"Shake Shack","American","Weekend",1392,29.05,4,33,16
+"Shake Shack","American","Weekend",1393,24.25,4,27,30
+"Shake Shack","American","Weekend",1394,17.03,NA,21,28
+"Shake Shack","American","Weekend",1395,22.85,5,24,23
+"Shake Shack","American","Weekend",1396,31.43,3,22,24
+"Shake Shack","American","Weekend",1397,12.37,3,28,28
+"Shake Shack","American","Weekend",1398,9.12,NA,31,19
+"Shake Shack","American","Weekend",1399,12.18,4,23,28
+"Shake Shack","American","Weekend",1400,12.08,3,29,24
+"Shake Shack","American","Weekend",1401,13.1,4,30,29
+"Shake Shack","American","Weekend",1402,29.1,5,26,24
+"Shake Shack","American","Weekend",1403,21.29,NA,35,21
+"Shake Shack","American","Weekend",1404,14.07,NA,31,25
+"Shake Shack","American","Weekend",1405,32.98,3,22,21
+"Shake Shack","American","Weekend",1406,8.25,NA,30,15
+"Shake Shack","American","Weekend",1407,15.76,5,32,24
+"Shake Shack","American","Weekend",1408,29.49,NA,34,24
+"Shake Shack","American","Weekend",1409,29.1,5,29,17
+"Shake Shack","American","Weekend",1410,16.93,NA,25,26
+"Shake Shack","American","Weekend",1411,8.88,5,27,23
+"Shake Shack","American","Weekend",1412,12.95,NA,27,18
+"Shake Shack","American","Weekend",1413,12.18,NA,35,29
+"Shake Shack","American","Weekend",1414,14.07,NA,25,28
+"Shake Shack","American","Weekend",1415,24.25,4,20,29
+"Shake Shack","American","Weekend",1416,12.95,4,30,26
+"Sushi Samba","Japanese","Weekday",1422,22.85,5,21,32
+"Sushi Samba","Japanese","Weekend",1423,13,4,33,21
+"Sushi Samba","Japanese","Weekend",1424,15.47,NA,32,26
+"Sushi Samba","Japanese","Weekend",1425,12.95,NA,21,21
+"Sushi Samba","Japanese","Weekend",1426,29.05,5,31,16
+"Sushi Samba","Japanese","Weekend",1427,6.11,5,30,27
+"Sushi Samba","Japanese","Weekend",1428,22.36,5,31,30
+"Sushi Samba","Japanese","Weekend",1429,6.84,5,27,20
+"Sushi Samba","Japanese","Weekend",1430,14.02,NA,30,29
+"Sushi Samba","Japanese","Weekend",1431,31.33,5,35,20
+"Sushi Samba","Japanese","Weekend",1432,12.61,5,29,29
+"Sushi of Gari","Japanese","Weekday",1433,10.72,NA,30,26
+"Sushi of Gari","Japanese","Weekday",1434,29.34,NA,32,25
+"Sushi of Gari","Japanese","Weekday",1435,12.18,5,25,24
+"Sushi of Gari","Japanese","Weekday",1436,12.13,5,29,26
+"Sushi of Gari","Japanese","Weekend",1437,16.01,NA,33,19
+"Sushi of Gari","Japanese","Weekend",1438,31.43,NA,21,27
+"Sushi of Gari","Japanese","Weekend",1439,9.31,5,31,22
+"Sushi of Gari","Japanese","Weekend",1440,16.98,NA,30,16
+"Sushi of Gari","Japanese","Weekend",1441,32.98,4,34,21
+"Sushi of Gari","Japanese","Weekend",1442,22.75,5,30,22
+"Sushi of Gari","Japanese","Weekend",1443,15.96,NA,22,19
+"Sushi of Gari","Japanese","Weekend",1444,15.96,5,23,22
+"Sushi of Gari","Japanese","Weekend",1445,15.52,NA,20,16
+"Sushi of Gari","Japanese","Weekend",1446,14.07,NA,35,26
+"Sushi of Gari","Japanese","Weekend",1447,29.15,NA,34,24
+"Sushi of Gari","Japanese","Weekend",1448,6.69,4,22,16
+"Sushi of Gari 46","Japanese","Weekday",1449,12.18,NA,24,26
+"Sushi of Gari 46","Japanese","Weekday",1450,8.83,NA,31,33
+"Sushi of Gari 46","Japanese","Weekday",1451,29.1,5,32,30
+"Sushi of Gari 46","Japanese","Weekday",1452,19.35,NA,28,24
+"Sushi of Gari 46","Japanese","Weekday",1453,13.05,NA,28,30
+"Sushi of Gari 46","Japanese","Weekday",1454,22.46,NA,21,29
+"Sushi of Gari 46","Japanese","Weekday",1455,12.13,NA,20,33
+"Sushi of Gari 46","Japanese","Weekday",1456,29.15,NA,32,32
+"Sushi of Gari 46","Japanese","Weekday",1457,12.18,NA,20,29
+"Sushi of Gari 46","Japanese","Weekday",1458,5.77,4,32,24
+"Sushi of Gari 46","Japanese","Weekday",1459,14.6,3,24,24
+"Sushi of Gari 46","Japanese","Weekday",1460,12.18,4,24,27
+"Sushi of Gari 46","Japanese","Weekday",1461,12.13,5,34,28
+"Sushi of Gari 46","Japanese","Weekend",1462,22.26,5,28,22
+"Sushi of Gari 46","Japanese","Weekend",1463,9.22,4,32,28
+"Sushi of Gari 46","Japanese","Weekend",1464,29.05,3,35,26
+"Sushi of Gari 46","Japanese","Weekend",1465,12.13,5,27,20
+"Sushi of Gari 46","Japanese","Weekend",1466,13.05,NA,24,22
+"Sushi of Gari 46","Japanese","Weekend",1467,31.43,5,29,30
+"Sushi of Gari 46","Japanese","Weekend",1468,16.3,NA,21,29
+"Sushi of Gari 46","Japanese","Weekend",1469,25.17,NA,29,27
+"Sushi of Gari 46","Japanese","Weekend",1470,22.26,5,27,26
+"Sushi of Gari 46","Japanese","Weekend",1471,12.13,NA,31,24
+"Sushi of Gari 46","Japanese","Weekend",1472,24.3,3,29,23
+"Sushi of Gari 46","Japanese","Weekend",1473,25.22,NA,32,28
+"Sushi of Gari 46","Japanese","Weekend",1474,12.13,NA,25,29
+"Sushi of Gari 46","Japanese","Weekend",1475,16.44,4,24,27
+"Sushi of Gari 46","Japanese","Weekend",1476,14.31,NA,27,25
+"Sushi of Gari 46","Japanese","Weekend",1477,16.06,NA,31,24
+"Sushi of Gari 46","Japanese","Weekend",1478,7.38,NA,29,28
+"Sushi of Gari 46","Japanese","Weekend",1479,29.05,NA,21,23
+"Sushi of Gari 46","Japanese","Weekend",1480,31.43,4,35,23
+"Sushi of Gari 46","Japanese","Weekend",1481,12.22,4,24,20
+"Sushi of Gari 46","Japanese","Weekend",1482,11.84,NA,27,24
+"Sushi of Gari 46","Japanese","Weekend",1483,12.56,4,20,22
+"Sushi of Gari 46","Japanese","Weekend",1484,22.8,NA,30,25
+"Sushi of Gari 46","Japanese","Weekend",1485,9.02,5,32,17
+"Sushi of Gari Tribeca","Japanese","Weekday",1486,12.13,5,22,26
+"Sushi of Gari Tribeca","Japanese","Weekday",1487,21.83,NA,34,30
+"Sushi of Gari Tribeca","Japanese","Weekday",1488,17.03,NA,35,30
+"Sushi of Gari Tribeca","Japanese","Weekday",1489,31.33,NA,34,26
+"Sushi of Gari Tribeca","Japanese","Weekday",1490,10.86,4,28,28
+"Sushi of Gari Tribeca","Japanese","Weekend",1491,9.27,NA,20,17
+"Sushi of Gari Tribeca","Japanese","Weekend",1492,29.2,5,32,22
+"Sushi of Gari Tribeca","Japanese","Weekend",1493,9.85,NA,26,17
+"Sushi of Gari Tribeca","Japanese","Weekend",1494,9.46,5,32,20
+"Sushi of Gari Tribeca","Japanese","Weekend",1495,14.79,NA,32,24
+"Sushi of Gari Tribeca","Japanese","Weekend",1496,12.18,5,35,19
+"Sushi of Gari Tribeca","Japanese","Weekend",1497,19.02,5,27,29
+"Sushi of Gari Tribeca","Japanese","Weekend",1498,24.2,NA,22,21
+"Sushi of Gari Tribeca","Japanese","Weekend",1499,29.15,4,22,17
+"Sushi of Gari Tribeca","Japanese","Weekend",1500,12.13,NA,25,30
+"Sushi of Gari Tribeca","Japanese","Weekend",1501,17.03,NA,23,22
+"Sushi of Gari Tribeca","Japanese","Weekend",1502,19.45,4,25,15
+"Sushi of Gari Tribeca","Japanese","Weekend",1503,8.63,5,33,17
+"Sushi of Gari Tribeca","Japanese","Weekend",1504,12.42,4,23,20
+"Sushi of Gari Tribeca","Japanese","Weekend",1505,14.12,NA,21,29
+"Sushi of Gari Tribeca","Japanese","Weekend",1506,9.46,NA,22,29
+"Sushi of Gari Tribeca","Japanese","Weekend",1507,8.63,5,33,28
+"Sushi of Gari Tribeca","Japanese","Weekend",1508,9.55,4,35,25
+"Sushi of Gari Tribeca","Japanese","Weekend",1509,14.07,5,34,29
+"TAO","Japanese","Weekday",1510,12.27,NA,26,29
+"TAO","Japanese","Weekday",1511,12.66,NA,29,29
+"TAO","Japanese","Weekday",1512,6.69,4,26,25
+"TAO","Japanese","Weekday",1513,12.18,NA,26,33
+"TAO","Japanese","Weekday",1514,13.48,NA,27,32
+"TAO","Japanese","Weekday",1515,29.49,NA,22,32
+"TAO","Japanese","Weekday",1516,25.27,4,24,24
+"TAO","Japanese","Weekday",1517,8.05,NA,26,31
+"TAO","Japanese","Weekday",1518,25.27,NA,33,30
+"TAO","Japanese","Weekday",1519,22.12,5,32,30
+"TAO","Japanese","Weekday",1520,12.08,3,24,26
+"TAO","Japanese","Weekday",1521,8,4,28,24
+"TAO","Japanese","Weekend",1522,16.15,3,24,22
+"TAO","Japanese","Weekend",1523,14.99,NA,24,21
+"TAO","Japanese","Weekend",1524,15.28,5,20,27
+"TAO","Japanese","Weekend",1525,31.43,NA,34,20
+"TAO","Japanese","Weekend",1526,8.54,4,26,23
+"TAO","Japanese","Weekend",1527,24.3,NA,24,22
+"TAO","Japanese","Weekend",1528,15.28,4,33,22
+"TAO","Japanese","Weekend",1529,12.17,5,22,16
+"TAO","Japanese","Weekend",1530,29.1,NA,28,23
+"TAO","Japanese","Weekend",1531,25.22,5,28,17
+"TAO","Japanese","Weekend",1532,16.01,NA,26,16
+"TAO","Japanese","Weekend",1533,13.97,5,28,25
+"TAO","Japanese","Weekend",1534,9.12,NA,34,18
+"TAO","Japanese","Weekend",1535,20.23,5,22,20
+"TAO","Japanese","Weekend",1536,24.25,4,22,21
+"TAO","Japanese","Weekend",1537,15.67,5,20,22
+"TAO","Japanese","Weekend",1538,15.76,NA,26,19
+"TAO","Japanese","Weekend",1539,9.65,4,25,18
+"TAO","Japanese","Weekend",1540,29.05,4,35,24
+"TAO","Japanese","Weekend",1541,12.61,5,32,24
+"TAO","Japanese","Weekend",1542,15.52,4,32,27
+"TAO","Japanese","Weekend",1543,12.71,3,22,17
+"TAO","Japanese","Weekend",1544,32.93,NA,34,16
+"TAO","Japanese","Weekend",1545,9.56,5,21,17
+"TAO","Japanese","Weekend",1546,15.86,4,22,17
+"TAO","Japanese","Weekend",1547,12.18,NA,23,24
+"TAO","Japanese","Weekend",1548,19.35,NA,34,22
+"TAO","Japanese","Weekend",1549,14.75,5,35,19
+"TAO","Japanese","Weekend",1550,16.05,4,23,20
+"TAO","Japanese","Weekend",1551,33.22,NA,23,19
+"TAO","Japanese","Weekend",1552,20.47,4,26,30
+"TAO","Japanese","Weekend",1553,12.08,NA,24,30
+"TAO","Japanese","Weekend",1554,9.22,5,26,25
+"TAO","Japanese","Weekend",1555,24.25,NA,31,27
+"TAO","Japanese","Weekend",1556,6.69,5,22,28
+"TAO","Japanese","Weekend",1557,8.1,5,32,16
+"TAO","Japanese","Weekend",1558,25.22,NA,26,16
+"Tamarind TriBeCa","Indian","Weekday",1559,14.02,NA,20,25
+"Tamarind TriBeCa","Indian","Weekday",1560,25.22,3,20,24
+"Tamarind TriBeCa","Indian","Weekday",1561,16.49,NA,31,28
+"Tamarind TriBeCa","Indian","Weekday",1562,12.95,3,27,24
+"Tamarind TriBeCa","Indian","Weekday",1563,8.59,5,32,31
+"Tamarind TriBeCa","Indian","Weekend",1564,12.23,4,21,21
+"Tamarind TriBeCa","Indian","Weekend",1565,22.26,5,34,15
+"Tamarind TriBeCa","Indian","Weekend",1566,25.22,5,30,26
+"Tamarind TriBeCa","Indian","Weekend",1567,11.64,NA,33,23
+"Tamarind TriBeCa","Indian","Weekend",1568,15.77,5,25,29
+"Tamarind TriBeCa","Indian","Weekend",1569,24.2,4,28,26
+"Tamarind TriBeCa","Indian","Weekend",1570,6.07,4,30,17
+"Tamarind TriBeCa","Indian","Weekend",1571,6.74,5,25,26
+"Tamarind TriBeCa","Indian","Weekend",1572,16.44,5,23,24
+"Tamarind TriBeCa","Indian","Weekend",1573,19.45,4,29,19
+"Tamarind TriBeCa","Indian","Weekend",1574,29.15,3,35,22
+"Tamarind TriBeCa","Indian","Weekend",1575,13.24,NA,23,30
+"Tamarind TriBeCa","Indian","Weekend",1576,12.18,5,25,20
+"Tamarind TriBeCa","Indian","Weekend",1577,29.39,5,30,25
+"Tamarind TriBeCa","Indian","Weekend",1578,12.13,NA,35,20
+"Tamarind TriBeCa","Indian","Weekend",1579,14.07,4,26,21
+"Tamarind TriBeCa","Indian","Weekend",1580,16.98,5,22,17
+"Tamarind TriBeCa","Indian","Weekend",1581,6.69,5,22,18
+"Tamarind TriBeCa","Indian","Weekend",1582,12.47,5,32,26
+"Tamarind TriBeCa","Indian","Weekend",1583,6.74,4,20,17
+"Tamarind TriBeCa","Indian","Weekend",1584,12.18,NA,26,30
+"Tamarind TriBeCa","Indian","Weekend",1585,24.2,NA,24,29
+"Terakawa Ramen","Japanese","Weekday",1589,8.54,3,27,25
+"Terakawa Ramen","Japanese","Weekday",1590,19.6,NA,23,26
+"Terakawa Ramen","Japanese","Weekend",1591,14.65,4,30,16
+"The Kati Roll Company","Indian","Weekday",1592,24.35,NA,33,29
+"The Kati Roll Company","Indian","Weekday",1593,5.87,NA,26,30
+"The Kati Roll Company","Indian","Weekday",1594,19.4,5,24,30
+"The Kati Roll Company","Indian","Weekday",1595,20.13,NA,24,31
+"The Kati Roll Company","Indian","Weekend",1596,5.34,4,27,18
+"The Kati Roll Company","Indian","Weekend",1597,19.45,NA,25,24
+"The Kati Roll Company","Indian","Weekend",1598,29.25,NA,30,21
+"The Kati Roll Company","Indian","Weekend",1599,24.2,5,26,16
+"The Kati Roll Company","Indian","Weekend",1600,16.15,5,20,29
+"The Kati Roll Company","Indian","Weekend",1601,11.64,4,34,18
+"The Kati Roll Company","Indian","Weekend",1602,17.03,5,24,22
+"The Kati Roll Company","Indian","Weekend",1603,14.07,5,33,17
+"The Kati Roll Company","Indian","Weekend",1604,31.33,5,28,25
+"The Kati Roll Company","Indian","Weekend",1605,16.83,4,26,20
+"The Kati Roll Company","Indian","Weekend",1606,33.03,NA,35,21
+"The Kati Roll Company","Indian","Weekend",1607,14.07,5,23,20
+"The Loop","Japanese","Weekend",1608,4.66,NA,34,25
+"The Loop","Japanese","Weekend",1609,31.38,4,26,24
+"The Loop","Japanese","Weekend",1610,16.98,5,26,27
+"The Loop","Japanese","Weekend",1611,24.3,5,21,29
+"The Meatball Shop","Italian","Weekday",1613,8.3,NA,29,32
+"The Meatball Shop","Italian","Weekday",1614,12.23,NA,28,33
+"The Meatball Shop","American","Weekday",1615,7.28,5,20,29
+"The Meatball Shop","Italian","Weekday",1616,8.54,5,24,29
+"The Meatball Shop","American","Weekday",1617,15.86,5,29,26
+"The Meatball Shop","Italian","Weekday",1618,8.63,4,28,27
+"The Meatball Shop","Italian","Weekday",1619,21.34,5,22,24
+"The Meatball Shop","Italian","Weekday",1620,16.54,5,32,24
+"The Meatball Shop","Italian","Weekday",1621,12.95,4,29,24
+"The Meatball Shop","Italian","Weekday",1622,12.56,NA,31,32
+"The Meatball Shop","Italian","Weekday",1623,29.25,5,35,29
+"The Meatball Shop","Italian","Weekday",1624,8.78,5,34,33
+"The Meatball Shop","Italian","Weekday",1625,12.71,5,29,33
+"The Meatball Shop","Italian","Weekday",1626,13.05,5,23,31
+"The Meatball Shop","Italian","Weekday",1627,13.53,3,20,31
+"The Meatball Shop","Italian","Weekday",1628,24.2,4,28,30
+"The Meatball Shop","Italian","Weekday",1629,17.08,5,22,26
+"The Meatball Shop","Italian","Weekday",1630,22.26,4,30,26
+"The Meatball Shop","Italian","Weekday",1631,9.65,5,34,28
+"The Meatball Shop","Italian","Weekday",1632,9.41,5,30,32
+"The Meatball Shop","Italian","Weekday",1633,24.3,4,31,29
+"The Meatball Shop","Italian","Weekday",1634,12.08,5,33,25
+"The Meatball Shop","Italian","Weekday",1635,29.1,5,22,33
+"The Meatball Shop","Italian","Weekday",1636,12.13,4,22,32
+"The Meatball Shop","Italian","Weekday",1637,12.08,NA,25,28
+"The Meatball Shop","Italian","Weekday",1638,8.83,NA,31,25
+"The Meatball Shop","Italian","Weekday",1639,14.7,5,30,24
+"The Meatball Shop","Italian","Weekday",1640,11.16,5,22,28
+"The Meatball Shop","Italian","Weekday",1641,19.45,5,31,32
+"The Meatball Shop","Italian","Weekday",1642,14.02,5,20,27
+"The Meatball Shop","Italian","Weekday",1643,32.98,5,26,27
+"The Meatball Shop","Italian","Weekday",1644,13,5,23,26
+"The Meatball Shop","Italian","Weekday",1645,17.03,NA,22,29
+"The Meatball Shop","Italian","Weekday",1646,14.02,5,32,32
+"The Meatball Shop","Italian","Weekday",1647,21.88,5,24,27
+"The Meatball Shop","Italian","Weekday",1648,11.59,NA,21,30
+"The Meatball Shop","Italian","Weekday",1649,32.98,3,23,25
+"The Meatball Shop","Italian","Weekend",1650,20.18,4,32,26
+"The Meatball Shop","American","Weekend",1651,12.18,5,22,26
+"The Meatball Shop","American","Weekend",1652,19.35,4,31,25
+"The Meatball Shop","American","Weekend",1653,31.43,NA,31,22
+"The Meatball Shop","Italian","Weekend",1654,15.91,NA,26,20
+"The Meatball Shop","Italian","Weekend",1655,19.35,NA,27,20
+"The Meatball Shop","American","Weekend",1656,24.2,5,21,30
+"The Meatball Shop","American","Weekend",1657,32.93,3,35,16
+"The Meatball Shop","Italian","Weekend",1658,6.84,NA,25,18
+"The Meatball Shop","American","Weekend",1659,14.5,5,34,25
+"The Meatball Shop","Italian","Weekend",1660,19.4,NA,28,17
+"The Meatball Shop","Italian","Weekend",1661,14.41,NA,28,28
+"The Meatball Shop","Italian","Weekend",1662,14.31,NA,23,17
+"The Meatball Shop","Italian","Weekend",1663,13.19,NA,26,29
+"The Meatball Shop","Italian","Weekend",1664,31.33,3,30,15
+"The Meatball Shop","Italian","Weekend",1665,12.23,5,35,22
+"The Meatball Shop","Italian","Weekend",1666,24.3,NA,33,21
+"The Meatball Shop","Italian","Weekend",1667,29.2,NA,31,24
+"The Meatball Shop","Italian","Weekend",1668,9.65,NA,29,16
+"The Meatball Shop","Italian","Weekend",1669,21.83,4,30,20
+"The Meatball Shop","Italian","Weekend",1670,19.35,5,21,23
+"The Meatball Shop","Italian","Weekend",1671,16.93,NA,30,25
+"The Meatball Shop","Italian","Weekend",1672,29.15,5,23,30
+"The Meatball Shop","Italian","Weekend",1673,11.69,4,35,16
+"The Meatball Shop","Italian","Weekend",1674,12.18,3,27,20
+"The Meatball Shop","Italian","Weekend",1675,6.79,NA,26,15
+"The Meatball Shop","Italian","Weekend",1676,12.08,3,32,19
+"The Meatball Shop","American","Weekend",1677,14.55,5,21,30
+"The Meatball Shop","Italian","Weekend",1678,6.69,NA,25,22
+"The Meatball Shop","Italian","Weekend",1679,16.49,3,22,28
+"The Meatball Shop","Italian","Weekend",1680,25.22,5,32,25
+"The Meatball Shop","Italian","Weekend",1681,12.13,4,21,25
+"The Meatball Shop","Italian","Weekend",1682,24.2,5,24,24
+"The Meatball Shop","Italian","Weekend",1683,8.54,3,31,15
+"The Meatball Shop","American","Weekend",1684,6.69,4,27,27
+"The Meatball Shop","American","Weekend",1685,5.77,NA,33,27
+"The Meatball Shop","Italian","Weekend",1686,32.93,5,34,29
+"The Meatball Shop","Italian","Weekend",1687,24.3,5,28,25
+"The Meatball Shop","Italian","Weekend",1688,22.36,4,28,18
+"The Meatball Shop","Italian","Weekend",1689,12.18,5,25,28
+"The Meatball Shop","American","Weekend",1690,12.56,NA,28,22
+"The Meatball Shop","Italian","Weekend",1691,12.18,NA,25,28
+"The Meatball Shop","Italian","Weekend",1692,16.2,5,21,26
+"The Meatball Shop","Italian","Weekend",1693,11.69,NA,30,21
+"The Meatball Shop","American","Weekend",1694,9.27,NA,24,23
+"The Meatball Shop","Italian","Weekend",1695,12.18,NA,27,17
+"The Meatball Shop","Italian","Weekend",1696,25.27,NA,25,29
+"The Meatball Shop","Italian","Weekend",1697,24.3,4,29,15
+"The Meatball Shop","Italian","Weekend",1698,19.4,NA,20,16
+"The Meatball Shop","Italian","Weekend",1699,14.6,5,21,23
+"The Meatball Shop","Italian","Weekend",1700,12.18,NA,20,16
+"The Meatball Shop","Italian","Weekend",1701,12.23,4,31,28
+"The Meatball Shop","Italian","Weekend",1702,12.23,5,25,19
+"The Meatball Shop","Italian","Weekend",1703,6.74,5,26,30
+"The Meatball Shop","Italian","Weekend",1704,14.94,5,32,25
+"The Meatball Shop","Italian","Weekend",1705,21.2,NA,34,16
+"The Meatball Shop","Italian","Weekend",1706,12.08,NA,23,23
+"The Meatball Shop","Italian","Weekend",1707,16.98,NA,32,30
+"The Meatball Shop","Italian","Weekend",1708,22.26,NA,28,25
+"The Meatball Shop","Italian","Weekend",1709,22.36,5,32,21
+"The Meatball Shop","Italian","Weekend",1710,9.22,NA,30,19
+"The Meatball Shop","Italian","Weekend",1711,33.03,5,30,16
+"The Meatball Shop","Italian","Weekend",1712,6.07,NA,28,21
+"The Meatball Shop","Italian","Weekend",1713,15.57,4,20,24
+"The Meatball Shop","Italian","Weekend",1714,9.17,NA,30,30
+"The Meatball Shop","Italian","Weekend",1715,20.61,NA,34,30
+"The Meatball Shop","Italian","Weekend",1716,6.06,NA,20,27
+"The Meatball Shop","American","Weekend",1717,12.18,4,23,22
+"The Meatball Shop","Italian","Weekend",1718,6.74,NA,30,25
+"The Meatball Shop","Italian","Weekend",1719,14.84,NA,20,28
+"The Meatball Shop","Italian","Weekend",1720,14.12,NA,32,18
+"The Meatball Shop","American","Weekend",1721,31.43,4,20,21
+"The Meatball Shop","American","Weekend",1722,29.25,3,21,19
+"The Meatball Shop","American","Weekend",1723,5.82,5,30,30
+"The Meatball Shop","Italian","Weekend",1724,22.36,4,35,21
+"The Meatball Shop","Italian","Weekend",1725,29.2,5,29,23
+"The Meatball Shop","Italian","Weekend",1726,16.1,NA,20,15
+"The Meatball Shop","American","Weekend",1727,12.13,NA,23,23
+"The Meatball Shop","American","Weekend",1728,14.5,5,25,22
+"The Meatball Shop","Italian","Weekend",1729,19.4,5,28,30
+"The Meatball Shop","Italian","Weekend",1730,6.74,5,29,23
+"The Meatball Shop","American","Weekend",1731,12.32,NA,31,19
+"The Meatball Shop","Italian","Weekend",1732,5.05,NA,29,19
+"The Meatball Shop","Italian","Weekend",1733,11.64,4,23,24
+"The Meatball Shop","Italian","Weekend",1734,12.13,5,34,16
+"The Meatball Shop","Italian","Weekend",1735,29.15,5,34,20
+"The Meatball Shop","Italian","Weekend",1736,7.61,3,20,26
+"The Meatball Shop","Italian","Weekend",1737,13.53,5,22,24
+"The Meatball Shop","Italian","Weekend",1738,6.69,NA,25,18
+"The Meatball Shop","Italian","Weekend",1739,29.05,4,32,19
+"The Meatball Shop","Italian","Weekend",1740,12.23,5,24,17
+"The Meatball Shop","Italian","Weekend",1741,29.15,5,29,27
+"The Meatball Shop","Italian","Weekend",1742,13,5,34,26
+"The Meatball Shop","Italian","Weekend",1743,19.45,5,21,19
+"The Meatball Shop","Italian","Weekend",1744,6.4,NA,23,20
+"The Odeon","American","Weekday",1745,12.9,3,31,28
+"The Odeon","American","Weekend",1746,6.69,4,30,20
+"The Odeon","American","Weekend",1747,13.92,NA,34,23
+"The Smile","American","Weekday",1748,12.18,5,29,27
+"The Smile","American","Weekday",1749,9.17,5,26,28
+"The Smile","American","Weekday",1750,19.4,5,26,27
+"The Smile","American","Weekday",1751,12.27,NA,32,24
+"The Smile","American","Weekday",1752,8.39,NA,20,31
+"The Smile","American","Weekday",1753,25.22,4,25,28
+"The Smile","American","Weekend",1754,12.18,NA,22,27
+"The Smile","American","Weekend",1755,7.81,5,24,21
+"The Smile","American","Weekend",1756,14.94,NA,27,22
+"The Smile","American","Weekend",1757,25.17,3,31,15
+"The Smile","American","Weekend",1758,29.1,NA,22,16
+"The Smile","American","Weekend",1759,13.39,NA,20,16
+"The Smile","American","Weekend",1760,12.08,5,27,25
+"The Smile","American","Weekend",1761,8.59,4,32,29
+"The Smile","American","Weekend",1762,12.13,4,29,24
+"The Smile","American","Weekend",1763,22.26,5,25,26
+"The Smile","American","Weekend",1764,5.82,3,22,25
+"The Smile","American","Weekend",1765,12.18,5,31,19
+"Tony's Di Napoli","Italian","Weekend",1766,11.3,4,35,29
+"Tony's Di Napoli","Italian","Weekend",1767,15.81,5,35,30
+"Tony's Di Napoli","Italian","Weekend",1768,5.82,5,26,26
+"Tony's Di Napoli","Italian","Weekend",1769,14.07,NA,22,27
+"Tony's Di Napoli","Italian","Weekend",1770,29.1,NA,26,19
+"Tortaria","Mexican","Weekday",1771,13,5,21,24
+"Tortaria","Mexican","Weekend",1772,8.92,NA,33,16
+"Tortaria","Mexican","Weekend",1773,19.31,NA,27,28
+"Tortaria","Mexican","Weekend",1774,13.05,5,23,19
+"Tres Carnes","Mexican","Weekday",1775,33.32,4,21,33
+"Tres Carnes","Mexican","Weekend",1776,9.17,4,25,30
+"Tres Carnes","Mexican","Weekend",1777,20.13,NA,35,18
+"V-Nam Cafe","Vietnamese","Weekday",1780,6.01,3,20,31
+"V-Nam Cafe","Vietnamese","Weekend",1781,12.08,NA,31,19
+"V-Nam Cafe","Vietnamese","Weekend",1782,22.26,5,33,26
+"V-Nam Cafe","Vietnamese","Weekend",1783,12.13,4,20,26
+"Vanessa's Dumpling House","Chinese","Weekday",1784,29.1,NA,22,25
+"Vanessa's Dumpling House","Chinese","Weekday",1785,5.92,NA,30,32
+"Vanessa's Dumpling House","Chinese","Weekend",1786,14.84,5,31,24
+"Vanessa's Dumpling House","Chinese","Weekend",1787,16.49,5,26,25
+"Vanessa's Dumpling House","Chinese","Weekend",1788,18.43,5,34,28
+"Vanessa's Dumpling House","Chinese","Weekend",1789,9.65,5,20,22
+"Vanessa's Dumpling House","Chinese","Weekend",1790,15.52,5,20,23
+"Vanessa's Dumpling House","Chinese","Weekend",1791,5.72,NA,20,21
+"Vanessa's Dumpling House","Chinese","Weekend",1792,12.18,NA,27,18
+"Vanessa's Dumplings","Chinese","Weekday",1793,12.13,NA,31,33
+"Vanessa's Dumplings","Chinese","Weekday",1794,25.22,NA,32,24
+"Vanessa's Dumplings","Chinese","Weekday",1795,29.2,NA,27,30
+"Vanessa's Dumplings","Chinese","Weekend",1796,6.7,5,20,17
+"Vanessa's Dumplings","Chinese","Weekend",1797,24.2,4,20,18
+"Vanessa's Dumplings","Chinese","Weekend",1798,15.57,5,33,28
+"Vanessa's Dumplings","Chinese","Weekend",1799,20.23,5,33,17
+"Vanessa's Dumplings","Chinese","Weekend",1800,15.09,NA,25,25
+"Vanessa's Dumplings","Chinese","Weekend",1801,9.51,NA,31,23
+"Vanessa's Dumplings","Chinese","Weekend",1802,16.78,5,27,29
+"Vanessa's Dumplings","Chinese","Weekend",1803,8.3,NA,24,20
+"Vanessa's Dumplings","Chinese","Weekend",1804,8.98,NA,20,20
+"Vanessa's Dumplings","Chinese","Weekend",1805,14.02,4,22,24
+"Vezzo Thin Crust Pizza","Italian","Weekday",1806,22.26,NA,22,32
+"Vezzo Thin Crust Pizza","Italian","Weekend",1807,9.17,NA,21,24
+"Vezzo Thin Crust Pizza","Italian","Weekend",1808,12.13,NA,27,15
+"Vezzo Thin Crust Pizza","Italian","Weekend",1809,13.05,5,31,27
+"Vezzo Thin Crust Pizza","Italian","Weekend",1810,12.13,5,34,26
+"Waverly Diner","American","Weekday",1812,16.3,3,28,25
+"Waverly Diner","American","Weekday",1813,14.6,3,20,32
+"Waverly Diner","American","Weekend",1814,6.84,NA,24,18
+"Waverly Diner","American","Weekend",1815,11.59,NA,25,22
+"Waverly Diner","American","Weekend",1816,14.94,NA,28,28
+"Waverly Diner","American","Weekend",1817,19.4,5,25,23
+"Waverly Diner","American","Weekend",1818,22.8,4,25,21
+"Westville Hudson","American","Weekday",1819,8.34,NA,22,26
+"Westville Hudson","American","Weekday",1820,20.23,NA,31,29
+"Westville Hudson","American","Weekend",1821,21.88,5,20,15
+"Westville Hudson","American","Weekend",1822,29.1,NA,20,24
+"Westville Hudson","American","Weekend",1823,24.3,NA,32,15
+"Westville Hudson","American","Weekend",1824,16.98,5,34,20
+"Westville Hudson","American","Weekend",1825,9.51,NA,27,28
+"Westville Hudson","American","Weekend",1826,11.16,4,24,20
+"Westville Hudson","American","Weekend",1827,20.13,4,29,19
+"Westville Hudson","American","Weekend",1828,12.18,3,20,25
+"Westville Hudson","American","Weekend",1829,12.56,5,26,28
+"Westville Hudson","American","Weekend",1830,33.03,5,25,18
+"Westville Hudson","American","Weekend",1831,16.01,5,20,18
+"Westville Hudson","American","Weekend",1832,24.25,NA,25,21
+"Westville Hudson","American","Weekend",1833,32.93,5,30,20
+"Xi'an Famous Foods","Chinese","Weekday",1838,14.12,3,24,31
+"Xi'an Famous Foods","Chinese","Weekday",1839,9.22,NA,31,32
+"Xi'an Famous Foods","Chinese","Weekend",1840,24.3,4,32,29
+"Xi'an Famous Foods","Chinese","Weekend",1841,6.64,NA,35,19
+"Xi'an Famous Foods","Chinese","Weekend",1842,19.45,5,28,18
+"Xi'an Famous Foods","Chinese","Weekend",1843,8.54,5,29,30
+"Xi'an Famous Foods","Chinese","Weekend",1844,6.02,5,33,24
+"Xi'an Famous Foods","Chinese","Weekend",1845,14.12,4,32,19
+"Xi'an Famous Foods","Chinese","Weekend",1846,20.86,4,35,26
+"Yama 49","Japanese","Weekday",1847,13,5,24,32
+"Yama 49","Japanese","Weekday",1848,12.61,5,23,28
+"Yama 49","Japanese","Weekend",1849,22.31,5,29,17
+"Yama 49","Japanese","Weekend",1850,31.33,5,21,27
+"Yama 49","Japanese","Weekend",1851,22.36,NA,33,25
+"Yama Japanese Restaurant","Japanese","Weekday",1852,24.25,NA,23,30
+"Yama Japanese Restaurant","Japanese","Weekday",1853,12.08,NA,25,33
+"Yama Japanese Restaurant","Japanese","Weekday",1854,9.02,3,25,33
+"Yama Japanese Restaurant","Japanese","Weekday",1855,12.18,NA,30,25
+"Yama Japanese Restaurant","Japanese","Weekend",1856,32.93,5,29,17
+"Yama Japanese Restaurant","Japanese","Weekend",1857,22.36,5,30,16
+"Yama Japanese Restaurant","Japanese","Weekend",1858,6.69,4,28,17
+"Yama Japanese Restaurant","Japanese","Weekend",1859,17.08,5,28,15
+"Yama Japanese Restaurant","Japanese","Weekend",1860,14.55,5,20,28
+"Yama Japanese Restaurant","Japanese","Weekend",1861,5.77,NA,34,21
+"Yama Japanese Restaurant","Japanese","Weekend",1862,25.27,NA,30,16
+"Yama Japanese Restaurant","Japanese","Weekend",1863,12.66,NA,25,26
+"Yama Japanese Restaurant","Japanese","Weekend",1864,8.78,4,22,28
+"Yama Japanese Restaurant","Japanese","Weekend",1865,9.65,5,24,16
+"Yama Japanese Restaurant","Japanese","Weekend",1866,16.1,NA,33,27
+"Yama Japanese Restaurant","Japanese","Weekend",1867,5.82,NA,30,30
+"Yama Japanese Restaurant","Japanese","Weekend",1868,12.13,NA,26,26
+"Yama Japanese Restaurant","Japanese","Weekend",1869,9.27,NA,23,29
+"da Umberto","Italian","Weekday",1874,12.27,5,20,30
+"da Umberto","Italian","Weekend",1875,32.98,NA,30,28
+"da Umberto","Italian","Weekend",1876,7.61,NA,23,26
+"ilili Restaurant","Middle Eastern","Weekday",1877,31.43,3,26,29
+"ilili Restaurant","Middle Eastern","Weekday",1878,9.46,4,25,25
+"ilili Restaurant","Middle Eastern","Weekday",1879,31.33,4,29,27
+"ilili Restaurant","Middle Eastern","Weekday",1880,25.22,4,32,25
+"ilili Restaurant","Middle Eastern","Weekday",1881,6.02,NA,27,29
+"ilili Restaurant","Middle Eastern","Weekday",1882,25.22,5,25,33
+"ilili Restaurant","Middle Eastern","Weekday",1883,13.73,5,22,33
+"ilili Restaurant","Middle Eastern","Weekday",1884,24.2,4,34,24
+"ilili Restaurant","Middle Eastern","Weekday",1885,12.23,5,24,32
+"ilili Restaurant","Middle Eastern","Weekend",1886,32.93,4,25,17
+"ilili Restaurant","Middle Eastern","Weekend",1887,9.56,NA,27,27
+"ilili Restaurant","Middle Eastern","Weekend",1888,29.25,3,27,21
+"ilili Restaurant","Middle Eastern","Weekend",1889,29.05,NA,24,29
+"ilili Restaurant","Middle Eastern","Weekend",1890,12.66,5,21,15
+"ilili Restaurant","Middle Eastern","Weekend",1891,8.97,NA,24,19
+"ilili Restaurant","Middle Eastern","Weekend",1892,9.17,NA,26,19
+"ilili Restaurant","Middle Eastern","Weekend",1893,16.3,4,27,16
+"ilili Restaurant","Middle Eastern","Weekend",1894,16.49,4,30,28
+"indikitch","Indian","Weekend",1895,5.58,NA,35,30
+"indikitch","Indian","Weekend",1896,9.26,5,33,26
+"indikitch","Indian","Weekend",1897,14.07,4,20,30
+"indikitch","Indian","Weekend",1898,22.26,NA,35,16

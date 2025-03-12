@@ -1,0 +1,232 @@
+---
+title: "Outline"
+format: pdf
+editor: visual
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=10)
+```
+
+```{r}
+# load packages - add any you would like
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(gridExtra)
+library(knitr)
+library(lattice)
+
+library(GGally)
+library(MASS)
+library(mnormt) 
+library(kableExtra)
+library(dplyr)
+```
+
+# Introduction
+
+The number of restaurants in New York is steadily increasing, reflecting the city’s fast-paced lifestyle and the growing reliance on dining out or ordering in. With so many options available, understanding what factors influence meal preparation time is essential for both restaurant efficiency and customer satisfaction. Our project aims to explore how specific restaurant characteristics contribute to the time it takes to prepare an order.
+
+To investigate this, we are using a multilevel dataset titled "NYC Restaurants Data - Food Ordering and Delivery." This dataset contains variables such as order_id, restaurant, cuisine_type, WeekendOrWeekday, cost, rating, and prep_time. The dataset is structured into two levels: level 2 variables include cost, prep_time, and order_id, while level 1 variables include rating, restaurant, WeekendOrWeekday, and cuisine type.
+
+Before diving into our analysis, let’s take a look at the structure of the dataset:
+
+```{r}
+NYCFoodOrders <- read.csv("NYCFoodOrders.csv")
+```
+
+```{r}
+table1 <- NYCFoodOrders %>%
+  filter(row_number() < 11 )
+kable(table1, booktabs=T, caption="The First 10 observations") %>%
+  kable_styling(font_size = 8, latex_options = c("scale_down", "striped"))
+```
+
+## **Key Variables Considered**
+
+### **Response Variable**
+
+-   **cost**: Total price of the order.
+
+### **Predictors**
+
+-   **prep_time**: Time taken to prepare the order (numeric).
+
+-   **rating**: Customer rating of the restaurant (numeric).
+
+-   **cuisine_type**: Type of cuisine (categorical: Italian, Chinese, etc.).
+
+-   **WeekendOrWeekday**: Whether the order was placed on a weekday or weekend (binary).
+
+-   **restaurant**: Random effect to account for differences across restaurants (factor)
+
+# Initial Data Exploration
+
+Distribution of order costs.
+
+```{r}
+ggplot(data=NYCFoodOrders, aes(x=cost)) + 
+  geom_histogram(binwidth=1, color="black", fill="white") + 
+  xlab("Price (USD)") + 
+  ylab("Count") +
+  ggtitle("fig. 2: Order Prices")
+```
+
+We can see the correlation between numerical variables using a corrplot
+
+```{r}
+library(corrplot)
+
+# Calculate correlation matrix
+cor_matrix <- cor(NYCFoodOrders[, c("cost", "prep_time", "delivery_time")])
+
+# Plot the heatmap
+corrplot(cor_matrix, method = "color", type = "upper", order = "hclust",
+         tl.col = "black", tl.srt = 45, # Text label color and rotation
+         addCoef.col = "blue", # Add correlation coefficients
+         col = colorRampPalette(c("white", "grey", "black"))(200)) # Color palette
+
+```
+
+### Lattice Plots
+
+This boxplot examines whether cuisine type influences cost.
+
+-   If different cuisine types have significantly different median costs, cuisine type should be included in the model.
+
+-   If cost variability is large within each cuisine, other factors may be stronger predictors.
+
+```{r}
+data <- NYCFoodOrders
+```
+
+```{r}
+bwplot(cost ~ cuisine_type, data = data, 
+       main = "Cost by Cuisine Type",
+       xlab = "Cuisine Type",
+       ylab = "Cost", 
+       scales = list(x = list(rot = 45)))
+```
+
+From this plot it's clear that cost does differ between cuisine types a significant amount, thus we should keep this as a predictors in our model.
+
+**Boxplot: Cost by Weekend vs. Weekday**
+
+This boxplot examines whether weekend orders cost more than weekday orders.
+
+-   If the median cost is higher on weekends, it suggests increased pricing or larger orders.
+
+-   A large difference would justify including WeekendOrWeekday as a predictor.
+
+```{r}
+bwplot(cost ~ WeekendOrWeekday, data = data, 
+       main = "Cost by Weekend/Weekday",
+       xlab = "Day Type",
+       ylab = "Cost")
+
+```
+
+From this plot we can conclude that cost doesn't differ a significant amount between weekdays and weekends, thus we don't have to include this variable as a binary predictor.
+
+**Cost Vs. Prep Time by Resturant**
+
+This plot explores the relationship between prep time and cost, grouped by restaurant.
+
+-   If different restaurants show unique trends, restaurant-level effects must be accounted for.
+
+-   If prep time consistently increases cost, we should include `prep_time` as a predictor.
+
+```{r}
+#xyplot(cost ~ prep_time | restaurant, data = data, 
+ #      type = c("p", "r"), 
+  #     layout = c(3,3),
+   #    main = "Cost vs. Prep Time by Restaurant")
+```
+
+From these plots its clear that cost does differ a lot based on the preptime of the meal, thus we should consider this in our model.
+
+```{r}
+xyplot(cost ~ rating, data = data, 
+       type = c("p", "r"),   # 'p' for points, 'r' for regression line
+       col.line = "red",     # Regression line color
+       pch = 16,             # Solid points
+       main = "Cost vs. Rating",
+       xlab = "Restaurant Rating",
+       ylab = "Cost")
+```
+
+From this plot its clear that rating doesn't significantly impact cost. This is likely because people ordering food are not ordering from high end restaurants thus, cost will generally be the same for most orders. \# Methods
+
+
+
+# M1
+
+
+\begin{align*}
+Y_{ij} & = \left[\alpha_{0} + \alpha_{1}\text{CuisineType}_{i} + \beta_{0}\text{Weekend}_{ij} + \beta_{1}\text{prep\_time}_{ij}\right] + u_{i} + \epsilon_{ij} \\
+\\
+\text{where} \quad & u_i \sim \mathcal{N}(0, \sigma_u^2) \quad \text{and} \quad \epsilon_{ij} \sim \mathcal{N}(0, \sigma^2)
+\end{align*}
+
+
+\begin{align*}
+u_i &\sim \mathcal{N}(0, \sigma^2_{\text{restaurant}}) \quad &\text{(Random restaurant effects)} \\
+\epsilon_{ij} &\sim \mathcal{N}(0, \sigma^2) \quad &\text{(Residual errors)}
+\end{align*}
+
+#Next Steps / Improvements We Want To Make
+
+```{r}
+M1 <- lmer(data=NYCFoodOrders, cost ~ cuisine_type + WeekendOrWeekday + prep_time + (1|restaurant), REML=TRUE)
+
+# Print the summary of the model to see the results
+summary(M1)
+
+```
+
+
+
+Diagnostic Plots for M1
+
+```{r}
+# Create diagnostic plots for the model without log transformation
+# 1. Residuals vs. Fitted Values
+p1_no_log <- ggplot(NULL, aes(x = fitted(M1), y = residuals(M1))) +
+  geom_point(alpha = 0.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "Fitted Values", y = "Residuals", title = "Residuals vs. Fitted Values (No Log)") +
+  theme_minimal()
+
+# 2. Normal Q-Q Plot
+p2_no_log <- ggplot(NULL, aes(sample = residuals(M1))) +
+  stat_qq() +
+  stat_qq_line() +
+  labs(title = "Normal Q-Q Plot (No Log)") +
+  theme_minimal()
+
+# 3. Histogram of Residuals
+p3_no_log <- ggplot(NULL, aes(x = residuals(M1))) +
+  geom_histogram(bins = 30, fill = "lightblue", color = "black") +
+  labs(x = "Residuals", title = "Histogram of Residuals (No Log)") +
+  theme_minimal()
+
+
+# Arrange the plots for the model without log transformation
+grid.arrange(p1_no_log, p2_no_log, p3_no_log, nrow = 2, ncol = 2)
+
+```
+We can see some obvious violations of our model assumptions which we will need to address, and Possibly consider other more appropriate models.
+
+
+# Results
+
+From the model output, most variables are not statistically significant. However, the p-value for food preparation time (0.057) is very close to the conventional significance threshold, suggesting a potential relationship between preparation time and cost. Specifically, for every additional minute of preparation time, the cost is expected to increase by 0.072, assuming all other factors remain constant. While this result is not definitively significant at the 0.05 level, it indicates a possible trend that longer preparation times may contribute to higher order costs. 
+More analysis will be added. 
+
+# Conclusion
+1. what does the result indicate about the restaurants in NYC
+2. What customers and owners can learn 
+3. The limitations of the model
+
+

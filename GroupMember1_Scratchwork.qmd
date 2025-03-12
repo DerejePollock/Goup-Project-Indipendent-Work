@@ -1,0 +1,427 @@
+---
+title: "Untitled"
+author: "Dereje Pollock"
+format: pdf
+editor: visual
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, fig.height=4, fig.width=10)
+```
+
+```{r}
+# load packages - add any you would like
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(gridExtra)
+library(knitr)
+
+
+```
+
+```{r}
+library(GGally)
+library(MASS)
+library(mnormt) 
+library(kableExtra)
+library(dplyr)
+install.packages("tinytex")
+```
+
+## Abstract
+
+A 150 word abstract.
+
+\newpage
+
+## Background and Significance
+
+Type background and significance section here.
+
+## Data
+
+```{r}
+install.packages("reticulate")
+
+```
+
+
+```{r}
+# Load the dataset
+
+# Load the dataset
+NYCFoodOrders <- read.csv("food_order_2nd.csv")
+
+# Convert 'rating' to numeric from character
+NYCFoodOrders$rating <- as.numeric(as.character(NYCFoodOrders$rating))
+
+# Data manipulation
+NYCFoodOrders <- NYCFoodOrders %>%
+  arrange(restaurant_name, day_of_the_week, customer_id, order_id) %>%
+  mutate(order_id = as.numeric(factor(order_id, levels = unique(order_id)))) %>%
+  rename(
+    customer_id = customer_id, 
+    restaurant = restaurant_name, 
+    cuisine_type = cuisine_type, 
+    cost = cost_of_the_order,
+    WeekendOrWeekday = day_of_the_week,
+    prep_time = food_preparation_time,
+    delivery_time = delivery_time
+  ) %>%
+  select(restaurant, cuisine_type, WeekendOrWeekday, order_id, cost, rating, prep_time, delivery_time) %>%
+  group_by(restaurant) %>%
+  filter(n() > 2) %>%  # Filter out restaurants with 2 or fewer orders
+  ungroup()
+
+# Checking the head of the cleaned data
+head(NYCFoodOrders)
+
+# Write the cleaned data back to CSV
+write.csv(NYCFoodOrders, "NYCFoodOrders.csv", row.names = FALSE)
+
+
+```
+
+
+
+Type data section here. Include captions with tables and graphs. Examples:
+
+
+```{r}
+NYCFoodOrders <- read.csv("NYCFoodOrders.csv")
+```
+
+
+```{r}
+table1 <- NYCFoodOrders %>%
+  filter(row_number() < 11 )
+kable(table1, booktabs=T, caption="The First 10 observations") %>%
+  kable_styling(font_size = 8, latex_options = c("scale_down", "striped"))
+```
+
+
+```{r}
+ggplot(data=NYCFoodOrders, aes(x=prep_time)) + 
+  geom_histogram(binwidth = 1, color="black", fill="white") + 
+  xlab("prep time(minutes))") + 
+  ylab("Count") +
+  ggtitle("fig. 1: Distribution of prep time")
+```
+
+
+```{r}
+ggplot(data=NYCFoodOrders, aes(x=cost)) + 
+  geom_histogram(binwidth=1, color="black", fill="white") + 
+  xlab("Price (USD)") + 
+  ylab("Count") +
+  ggtitle("fig. 2: Order Prices")
+```
+
+
+```{r}
+library(corrplot)
+
+# Calculate correlation matrix
+cor_matrix <- cor(NYCFoodOrders[, c("cost", "prep_time", "delivery_time")])
+
+# Plot the heatmap
+corrplot(cor_matrix, method = "color", type = "upper", order = "hclust",
+         tl.col = "black", tl.srt = 45, # Text label color and rotation
+         addCoef.col = "blue", # Add correlation coefficients
+         col = colorRampPalette(c("white", "grey", "black"))(200)) # Color palette
+
+```
+
+
+
+## Methods
+
+```{r}
+# Extract unique cuisine types
+unique_cuisines <- unique(NYCFoodOrders$cuisine_type)
+
+# Print the list of unique cuisine types
+print(unique_cuisines)
+```
+```{r}
+# Count the number of orders for each cuisine type
+cuisine_counts <- table(NYCFoodOrders$cuisine_type)
+
+# Sort the counts in descending order
+sorted_cuisine_counts <- sort(cuisine_counts, decreasing = TRUE)
+
+# Print the sorted counts
+print(sorted_cuisine_counts)
+
+```
+
+
+```{r}
+# Extract unique restaurant types
+unique_restaurants <- unique(NYCFoodOrders$restaurant)
+
+# Print the list of unique cuisine types
+print(unique_restaurants)
+```
+
+```{r}
+# Calculate the number of orders per restaurant
+orders_per_restaurant <- NYCFoodOrders %>%
+  group_by(restaurant) %>%
+  summarise(Orders = n(), .groups = 'drop') %>%
+  arrange(desc(Orders))  # Arrange in descending order of orders
+
+# Print the result
+print(orders_per_restaurant)
+```
+
+
+```{r}
+
+# Step 1: Create a summarized dataset with the count of orders per restaurant
+df1 <- NYCFoodOrders %>%
+  group_by(restaurant) %>%
+  summarise(Orders = n(), .groups = 'drop')
+
+# Step 2: Filter restaurants with more than 15 orders
+popular_restaurants <- df1 %>%
+  filter(Orders > 50)
+
+# Step 3: Filter the original dataset to include only rows from popular restaurants
+TopRestaurantOrders <- NYCFoodOrders %>%
+  semi_join(popular_restaurants, by = "restaurant")
+
+# Print the new dataset or explore its structure
+print(TopRestaurantOrders)
+glimpse(TopRestaurantOrders)
+```
+
+```{r}
+M5 <- lmer(data=TopRestaurantOrders, cost ~  + cuisine_type + prep_time + WeekendOrWeekday + (1|restaurant))
+
+# Print the summary of the model to see the results
+summary(M5)
+```
+
+```{r}
+# Create diagnostic plots for the model without log transformation
+# 1. Residuals vs. Fitted Values
+p1_no_log <- ggplot(NULL, aes(x = fitted(M5), y = residuals(M5))) +
+  geom_point(alpha = 0.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "Fitted Values", y = "Residuals", title = "Residuals vs. Fitted Values (No Log)") +
+  theme_minimal()
+
+# 2. Normal Q-Q Plot
+p2_no_log <- ggplot(NULL, aes(sample = residuals(M5))) +
+  stat_qq() +
+  stat_qq_line() +
+  labs(title = "Normal Q-Q Plot (No Log)") +
+  theme_minimal()
+
+# 3. Histogram of Residuals
+p3_no_log <- ggplot(NULL, aes(x = residuals(M5))) +
+  geom_histogram(bins = 30, fill = "lightblue", color = "black") +
+  labs(x = "Residuals", title = "Histogram of Residuals (No Log)") +
+  theme_minimal()
+
+# 4. Scale-Location Plot
+p4_no_log <- ggplot(NULL, aes(x = fitted(M5), y = sqrt(abs(residuals(M5))))) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", color = "red") +
+  labs(x = "Fitted Values", y = "Sqrt of |Standardized Residuals|", title = "Scale-Location Plot (No Log)") +
+  theme_minimal()
+
+# Arrange the plots for the model without log transformation
+grid.arrange(p1_no_log, p2_no_log, p3_no_log, p4_no_log, nrow = 2, ncol = 2)
+
+```
+
+
+```{r}
+# Assuming the 'lme4' package is already loaded
+# Adding an interaction term and transforming 'prep_time'
+M5_updated <- lmer(log(cost) ~ cuisine_type * WeekendOrWeekday + I(log(prep_time + 1)) + (1|restaurant), data = TopRestaurantOrders)
+
+# Check the summary of the updated model
+summary(M5_updated)
+```
+
+```{r}
+library(lme4)
+
+# Assuming 'cost' is continuous and positive
+# Using Gamma family with a log link function
+M5_glmm <- glmer(cost ~ cuisine_type + prep_time + WeekendOrWeekday + (1 | restaurant), 
+                 data = TopRestaurantOrders, 
+                 family = Gamma(link = "log"))
+
+# Print the summary of the model
+summary(M5_glmm)
+
+```
+```{r}
+# Random intercepts for restaurants, random slopes for prep_time by restaurant
+m6 <- lmer(cost ~ WeekendOrWeekday + prep_time + delivery_time +(restaurant|cuisine_type) + (delivery_time | restaurant), data = NYCFoodOrders)
+summary(m6)
+```
+
+
+
+Type methods section here. Write your final model in equation form, like this:
+
+
+Since there are 11 cuizine types, i didnt put them all into the model.
+\begin{align*}
+Y_{ij} & = \left[\alpha_{0}+\alpha_{1}\text{CuisineType}_{i}+\beta_{0}\text{Weekend}_{ij}+\beta_{1}\text{prep\_time}_{ij}+\beta_{2}\text{delivery\_time}_{ij}\right] 
+    & \quad + \left[u_{i}+\epsilon_{ij}\right] \\
+    \\
+\text{where} \quad & u_i \sim \mathcal{N}(0, \sigma_u^2) \quad \text{and} \quad \epsilon_{ij} \sim \mathcal{N}(0, \sigma^2)
+\end{align*}
+
+
+```{r}
+M1 <- lmer(data=NYCFoodOrders, cost ~ cuisine_type + WeekendOrWeekday + prep_time + (1|restaurant), REML=TRUE)
+
+# Print the summary of the model to see the results
+summary(M1)
+```
+
+
+
+```{r}
+library(lme4)
+
+# Applying log transformation to the 'cost' variable directly in the model formula
+M1_log <- lmer(log(cost) ~ cuisine_type + WeekendOrWeekday + prep_time + (1 | restaurant), data = NYCFoodOrders, REML = TRUE)
+
+# Print the summary of the transformed model
+summary(M1_log)
+```
+
+```{r}
+library(lme4)
+library(ggplot2)
+
+# Fit the LME model without log transformation
+M1 <- lmer(cost ~ cuisine_type + WeekendOrWeekday + prep_time + (1 | restaurant), data = NYCFoodOrders, REML = TRUE)
+
+# Create diagnostic plots for the model without log transformation
+# 1. Residuals vs. Fitted Values
+p1_no_log <- ggplot(NULL, aes(x = fitted(M5), y = residuals(M5))) +
+  geom_point(alpha = 0.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "Fitted Values", y = "Residuals", title = "Residuals vs. Fitted Values (No Log)") +
+  theme_minimal()
+
+# 2. Normal Q-Q Plot
+p2_no_log <- ggplot(NULL, aes(sample = residuals(M5))) +
+  stat_qq() +
+  stat_qq_line() +
+  labs(title = "Normal Q-Q Plot (No Log)") +
+  theme_minimal()
+
+# 3. Histogram of Residuals
+p3_no_log <- ggplot(NULL, aes(x = residuals(M5))) +
+  geom_histogram(bins = 30, fill = "lightblue", color = "black") +
+  labs(x = "Residuals", title = "Histogram of Residuals (No Log)") +
+  theme_minimal()
+
+# 4. Scale-Location Plot
+p4_no_log <- ggplot(NULL, aes(x = fitted(M5), y = sqrt(abs(residuals(M5))))) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", color = "red") +
+  labs(x = "Fitted Values", y = "Sqrt of |Standardized Residuals|", title = "Scale-Location Plot (No Log)") +
+  theme_minimal()
+
+# Arrange the plots for the model without log transformation
+grid.arrange(p1_no_log, p2_no_log, p3_no_log, p4_no_log, nrow = 2, ncol = 2)
+
+```
+
+```{r}
+# Fit the LME model with log transformation
+M1_log <- lmer(log(cost) ~ cuisine_type + WeekendOrWeekday + prep_time + (1 | restaurant), data = NYCFoodOrders, REML = TRUE)
+
+# Create diagnostic plots for the model with log transformation
+# 1. Residuals vs. Fitted Values
+p1_log <- ggplot(NULL, aes(x = fitted(M1_log), y = residuals(M1_log))) +
+  geom_point(alpha = 0.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "Fitted Values", y = "Residuals", title = "Residuals vs. Fitted Values (Log)") +
+  theme_minimal()
+
+# 2. Normal Q-Q Plot
+p2_log <- ggplot(NULL, aes(sample = residuals(M1_log))) +
+  stat_qq() +
+  stat_qq_line() +
+  labs(title = "Normal Q-Q Plot (Log)") +
+  theme_minimal()
+
+# 3. Histogram of Residuals
+p3_log <- ggplot(NULL, aes(x = residuals(M1_log))) +
+  geom_histogram(bins = 30, fill = "lightblue", color = "black") +
+  labs(x = "Residuals", title = "Histogram of Residuals (Log)") +
+  theme_minimal()
+
+# 4. Scale-Location Plot
+p4_log <- ggplot(NULL, aes(x = fitted(M1_log), y = sqrt(abs(residuals(M1_log))))) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", color = "red") +
+  labs(x = "Fitted Values", y = "Sqrt of |Standardized Residuals|", title = "Scale-Location Plot (Log)") +
+  theme_minimal()
+
+# Arrange the plots for the model with log transformation
+grid.arrange(p1_log, p2_log, p3_log, p4_log, nrow = 2, ncol = 2)
+
+```
+
+$$
+\left[ \begin{array}{c}
+            u_{i} \\ v_{i}
+          \end{array}  \right] \sim N \left( \left[
+          \begin{array}{c}
+            0 \\ 0
+          \end{array} \right], \left[
+          \begin{array}{cc}
+            \sigma_{u}^{2} & \rho_{uv}\sigma_{u}\sigma_v \\
+            \rho_{uv}\sigma_{u}\sigma_v & \sigma_{v}^{2}
+          \end{array} \right] \right) 
+$$
+
+and $\epsilon_{ij}\sim N(0,\sigma^2)$.
+
+## Results
+
+Write your results section here. Include the fixed and random effects tables, as below.
+
+```{r}
+music <- music %>% mutate(orch = as.numeric(instrument=="orchestral instrument"),
+                          large = as.numeric(perform_type=="Large Ensemble"))
+M <- lmer(na ~ orch + large + orch:large +
+  (large|id), data = music)
+summary(M)
+```
+
+## Discussion and Conclusions
+
+Type discussion section.
+
+\newpage
+
+## References
+
+References in APA format. For example:
+
+Sadler, M. E., & Miller, C. J. (2010). Performance anxiety: A longitudinal study of the roles of personality and experience in musicians. Social Psychological and Personality Science, 1(3), 280-287.
+
+Lin, M. C. (2019). An Investigation Of Music Performance Anxiety In Taiwanese Pianists, Vocalists, String And Wind Instrumentalists At The College Level.
+
+Stoeber, J., & Eismann, U. (2007). Perfectionism in young musicians: Relations with motivation, effort, achievement, and distress. Personality and Individual Differences, 43(8), 2182-2192.
+
+Roback, P., & Legler, J. (2021). Beyond Multiple Linear Regression: Applied Generalized Linear Models And Multilevel Models in R. CRC Press.
+
+\newpage
+
+## Appendix (optional)

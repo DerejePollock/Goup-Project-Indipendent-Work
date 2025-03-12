@@ -158,23 +158,21 @@ xyplot(cost ~ rating, data = data,
 
 From this plot its clear that rating doesn't significantly impact cost. This is likely because people ordering food are not ordering from high end restaurants thus, cost will generally be the same for most orders. \# Methods
 
-
-
 # M1
 
-
+```{=tex}
 \begin{align*}
 Y_{ij} & = \left[\alpha_{0} + \alpha_{1}\text{CuisineType}_{i} + \beta_{0}\text{Weekend}_{ij} + \beta_{1}\text{prep\_time}_{ij}\right] + u_{i} + \epsilon_{ij} \\
 \\
 \text{where} \quad & u_i \sim \mathcal{N}(0, \sigma_u^2) \quad \text{and} \quad \epsilon_{ij} \sim \mathcal{N}(0, \sigma^2)
 \end{align*}
-
-
+```
+```{=tex}
 \begin{align*}
 u_i &\sim \mathcal{N}(0, \sigma^2_{\text{restaurant}}) \quad &\text{(Random restaurant effects)} \\
 \epsilon_{ij} &\sim \mathcal{N}(0, \sigma^2) \quad &\text{(Residual errors)}
 \end{align*}
-
+```
 #Next Steps / Improvements We Want To Make
 
 ```{r}
@@ -184,8 +182,6 @@ M1 <- lmer(data=NYCFoodOrders, cost ~ cuisine_type + WeekendOrWeekday + prep_tim
 summary(M1)
 
 ```
-
-
 
 Diagnostic Plots for M1
 
@@ -216,17 +212,15 @@ p3_no_log <- ggplot(NULL, aes(x = residuals(M1))) +
 grid.arrange(p1_no_log, p2_no_log, p3_no_log, nrow = 2, ncol = 2)
 
 ```
-We can see some obvious violations of our model assumptions which we will need to address, and Possibly consider other more appropriate models.
 
+We can see some obvious violations of our model assumptions which we will need to address, and Possibly consider other more appropriate models.
 
 # Results
 
-From the model output, most variables are not statistically significant. However, the p-value for food preparation time (0.057) is very close to the conventional significance threshold, suggesting a potential relationship between preparation time and cost. Specifically, for every additional minute of preparation time, the cost is expected to increase by 0.072, assuming all other factors remain constant. While this result is not definitively significant at the 0.05 level, it indicates a possible trend that longer preparation times may contribute to higher order costs. 
-More analysis will be added. 
+From the model output, most variables are not statistically significant. However, the p-value for food preparation time (0.057) is very close to the conventional significance threshold, suggesting a potential relationship between preparation time and cost. Specifically, for every additional minute of preparation time, the cost is expected to increase by 0.072, assuming all other factors remain constant. While this result is not definitively significant at the 0.05 level, it indicates a possible trend that longer preparation times may contribute to higher order costs. More analysis will be added.
 
 # Conclusion
-1. what does the result indicate about the restaurants in NYC
-2. What customers and owners can learn 
-3. The limitations of the model
 
-
+1.  what does the result indicate about the restaurants in NYC
+2.  What customers and owners can learn
+3.  The limitations of the model

@@ -33,9 +33,8 @@ Type background and significance section here.
 Type data section here. Include captions with tables and graphs. Examples:
 
 ```{r}
-music <- read.csv("https://raw.githubusercontent.com/proback/BeyondMLR/master/data/musicdata.csv")
-T1 <- head(music %>% select(id, perform_type, memory, na, age, gender, instrument, years_study, mpqpem, mpqnem, mpqab ),10)       
-kable(T1, caption="First 10 rows of the dataset")
+orders <- read.csv("food_order.csv")
+
 ```
 
 ```{r, fig.cap="Negative affect (a) for all 497 performances and (b) average for each musician "}
